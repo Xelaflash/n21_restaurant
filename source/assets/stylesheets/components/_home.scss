@@ -1,13 +1,28 @@
 .home {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 .banner {
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
+  text-align: center;
+
+  .logo-wrapper {
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .logo-banner {
+    width: 200px;
+    height: auto;
+  }
+
+  h1 {
+    color: $white;
+    font-size: 32px;
+    padding-top: 20px;
+  }
 }
