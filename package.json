@@ -40,6 +40,6 @@
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "babel-eslint": "^10.0.1",
-    "normalize.css": "^8.0.1"
+    "glob": "^7.1.6"
   }
 }
