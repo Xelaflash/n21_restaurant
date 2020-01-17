@@ -26,6 +26,15 @@ h1 {
   font-family: $headers-font;
   letter-spacing: 0.1em;
   font-size: 44px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.title-sep {
+  background: #851D21;
+  height: 7px;
+  border-radius: 50px;
+  width: 10%;
 }
 
 // Utilities classes (take on Bootstrap)
