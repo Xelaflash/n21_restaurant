@@ -7,7 +7,7 @@ gem 'pry-byebug', require: true
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-pry'
-gem 'dotenv-rails', '>= 2.7.2', groups: [:development, :test]
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'middleman-favicon-maker'
 
 # Fix critical github warning

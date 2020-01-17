@@ -184,7 +184,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionview (>= 5.0.7.2)
-  dotenv-rails (>= 2.7.2)
+  dotenv-rails
   middleman (~> 4.3)
   middleman-autoprefixer (~> 2.7)
   middleman-deploy!
@@ -193,3 +193,6 @@ DEPENDENCIES
   middleman-minify-html
   middleman-pry
   pry-byebug
+
+BUNDLED WITH
+   2.1.4
