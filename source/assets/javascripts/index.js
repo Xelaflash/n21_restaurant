@@ -1,1 +1,1 @@
-console.log('Hello from webpacker index.js');
+import '@babel/polyfill';
