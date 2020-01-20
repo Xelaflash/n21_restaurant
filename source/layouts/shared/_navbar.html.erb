@@ -1,12 +1,12 @@
 <nav id="navbar">
   <div class="nav-wrapper">
     <div class="logo">
-      <% link_to "/index.html", 'aria-label': "Back to Home" do %>
+      <% link_to "#home-section", 'aria-label': "Back to Home" do %>
         <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579523189/nav-logo.png", alt: "N21 Restaurant - Logo", id:"nav-logo-left" %>
       <% end %>
     </div>
-    <!-- Right Navigation -->
-    <div class="navbar-middle">
+    <!-- Navigation -->
+    <div class="navbar-middle hidden-sm-down">
       <ul class="nav-list">
         <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link" %></li>
         <li class="navbar-item"><%= link_to "Gallery", "#gallery-section", class:"navbar-link" %></li>
@@ -14,11 +14,37 @@
         <li class="navbar-item"><%= link_to "Contact", "contact-section", class:"navbar-link" %></li>
       </ul>
     </div>
-    <div class="social-wrapper">
+    <div class="social-wrapper hidden-sm-down">
       <div class="social-links">
         <a href="https://www.facebook.com/N21restaurant/" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-square"></i></i></a>
         <a href="https://www.instagram.com/n21restaurant/?hl=en" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="tel:+842839300840" class="nav-icon" aria-label="Telephone"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <!-- Burger menu for small screens -->
+    <div class="mobile_nav hidden-md-up">
+      <button class="hamburger hamburger-collapse front-position" type="button" aria-label="Menu" id="sidenav-trigger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="sidenav">
+        <% link_to "#home-section" do %>
+          <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579523189/nav-logo.png", alt: "N21 Restaurant - Logo", id:"nav-logo-left" %>
+        <% end %>
+        <ul>
+          <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "Gallery", "#gallery-section", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "Private events", "private_events-section", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "Contact", "contact-section", class:"navbar-link" %></li>
+        </ul>
+        <div class="social-wrapper">
+          <div class="social-links">
+            <a href="https://www.facebook.com/N21restaurant/" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-square"></i></i></a>
+            <a href="https://www.instagram.com/n21restaurant/?hl=en" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+842839300840" class="nav-icon" aria-label="Telephone"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
