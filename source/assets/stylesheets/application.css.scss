@@ -12,6 +12,10 @@
 @import "pages/index";
 
 // Base css
+html {
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   background: $white;
   font-family: $body-font;
@@ -35,6 +39,12 @@ h1 {
   height: 7px;
   border-radius: 50px;
   width: 10%;
+}
+
+
+.freezePage {
+  overflow: hidden;
+  height: 100%;
 }
 
 // Utilities classes (take on Bootstrap)

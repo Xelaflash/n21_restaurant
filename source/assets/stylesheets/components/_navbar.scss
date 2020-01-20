@@ -86,8 +86,9 @@
 
 // start sidenav
 #logo-sideNav {
-  height: 90px;
-  margin: 10px auto;
+  height: 80px;
+  border-radius: 5px;
+  margin: 20px;
   transition: 0.2s;
   opacity: 0;
 }
@@ -104,16 +105,16 @@
   overflow: auto;
   white-space: nowrap;
   transition: 0.6s;
-  padding-top: 100px;
 
   ul {
-    margin: 40px 0 0 10px;
+    margin: 60px auto 0 auto;
+    text-align: center;
   }
 
   li {
-    margin-left: 10px;
+    margin: auto;
     width: fit-content;
-    padding: 20px 30px;
+    padding: 40px 0;
   }
 }
 
@@ -133,7 +134,7 @@
 
 .sidenav a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 26px;
   font-family: $headers-font;
   color: $white;
 }
@@ -142,8 +143,9 @@
   color: $cream;
 }
 
-.social-wrapper {
+.social-wrapper-sidenav {
   text-align: center;
+  margin-top: 100px;
 }
 
 .social-links-sidenav {
@@ -155,7 +157,7 @@
 .social-links-sidenav a {
   color: $white;
   cursor: pointer;
-  font-size: 36px;
+  font-size: 46px;
   padding: 0px 20px;
 
   &:hover {

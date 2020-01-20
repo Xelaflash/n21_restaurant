@@ -30,16 +30,16 @@
       </button>
       <div class="sidenav">
         <% link_to "#home-section" do %>
-          <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579523189/nav-logo.png", alt: "N21 Restaurant - Logo", id:"nav-logo-left" %>
+          <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579523189/nav-logo.png", alt: "N21 Restaurant - Logo", id:"logo-sideNav" %>
         <% end %>
         <ul>
-          <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link" %></li>
-          <li class="navbar-item"><%= link_to "Gallery", "#gallery-section", class:"navbar-link" %></li>
-          <li class="navbar-item"><%= link_to "Private events", "private_events-section", class:"navbar-link" %></li>
-          <li class="navbar-item"><%= link_to "Contact", "contact-section", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link sidenav-link" %></li>
+          <li class="navbar-item"><%= link_to "Gallery", "#gallery-section", class:"navbar- sidenav-link" %></li>
+          <li class="navbar-item"><%= link_to "Private events", "#private_events-section", class:"navbar- sidenav-link" %></li>
+          <li class="navbar-item"><%= link_to "Contact", "#contact-section", class:"navbar-link sidenav-link" %></li>
         </ul>
-        <div class="social-wrapper">
-          <div class="social-links">
+        <div class="social-wrapper-sidenav">
+          <div class="social-links-sidenav">
             <a href="https://www.facebook.com/N21restaurant/" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-square"></i></i></a>
             <a href="https://www.instagram.com/n21restaurant/?hl=en" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="tel:+842839300840" class="nav-icon" aria-label="Telephone"><i class="fab fa-whatsapp"></i></a>
