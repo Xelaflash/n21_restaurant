@@ -23,19 +23,18 @@
     </div>
     <!-- Burger menu for small screens -->
     <div class="mobile_nav hidden-md-up">
-      <button class="hamburger hamburger-collapse front-position" type="button" aria-label="Menu" id="sidenav-trigger">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
+      <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579354123/N-white.png", alt: "N21 Restaurant", class: "sliding-img-left front-position ", id:"n-img" %>
+      <button class="hamburger front-position" type="button" aria-label="Menu" id="sidenav-trigger">
       </button>
+      <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579354322/21-white.png", alt: "N21 Restaurant", class: "sliding-img-right front-position ", id:"21-img" %>
       <div class="sidenav">
         <% link_to "#home-section" do %>
           <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579523189/nav-logo.png", alt: "N21 Restaurant - Logo", id:"logo-sideNav" %>
         <% end %>
         <ul>
           <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link sidenav-link" %></li>
-          <li class="navbar-item"><%= link_to "Gallery", "#gallery-section", class:"navbar- sidenav-link" %></li>
-          <li class="navbar-item"><%= link_to "Private events", "#private_events-section", class:"navbar- sidenav-link" %></li>
+          <li class="navbar-item"><%= link_to "Gallery", "#gallery-section", class:"navbar-link sidenav-link" %></li>
+          <li class="navbar-item"><%= link_to "Private events", "#private_events-section", class:"navbar-link sidenav-link" %></li>
           <li class="navbar-item"><%= link_to "Contact", "#contact-section", class:"navbar-link sidenav-link" %></li>
         </ul>
         <div class="social-wrapper-sidenav">

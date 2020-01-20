@@ -85,16 +85,23 @@
 
 
 // start sidenav
+
+.mobile_nav {
+  position: absolute;
+  right: 20px;
+}
+
 #logo-sideNav {
-  height: 80px;
+  height: 70px;
+  margin-top: 3px;
   border-radius: 5px;
-  margin: 20px;
   transition: 0.2s;
   opacity: 0;
 }
 
 .sidenav {
   height: 100%;
+  padding: 0 30px;
   width: 0;
   position: fixed;
   opacity: 0;
@@ -105,6 +112,7 @@
   overflow: auto;
   white-space: nowrap;
   transition: 0.6s;
+
 
   ul {
     margin: 60px auto 0 auto;
@@ -125,11 +133,6 @@
   #logo-sideNav {
     opacity: 1;
   }
-}
-
-
-.front-position {
-  position: relative;
 }
 
 .sidenav a {
@@ -167,91 +170,58 @@
 
 // Hamburger
 .hamburger {
-  z-index: 2;
-  padding: 15px 5px;
+  background: url('https://res.cloudinary.com/dpra9vwkq/image/upload/v1579354123/burger-Tuning_White.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  width: 50px;
+  z-index: 4;
   cursor: pointer;
   transition-property: opacity, filter;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
   transition-timing-function: linear;
-  color: $white;
-  background-color: transparent;
+  margin: 0 70px 0 0;
+  padding: 0;
   border: 0;
-  margin: 0;
-
-  .hamburger-inner,
-  .hamburger-inner::before,
-  .hamburger-inner::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 4px;
-    background-color: $white;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
-    border-radius: 4px;
-  }
-}
-
-.hamburger-box {
-  width: 40px;
-  height: 24px;
-  display: inline-block;
   position: relative;
 }
 
-.hamburger-inner {
-  top: 25px;
-  bottom: 0;
-  transition-duration: 0.13s;
-  transition-delay: 0.13s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-
-  &::before {
-    top: -10px;
-  }
-
-  &::after {
-    bottom: -10px;
-  }
+.front-position {
+  position: relative;
 }
 
-.hamburger-collapse {
-  .hamburger-inner {
-    &::after {
-      top: -20px;
-      transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
-        opacity 0.1s linear;
-    }
+.sliding-img-left {
+  z-index: 2;
+  height: 55px;
+  width: auto;
+  opacity: 0;
+  transition: all 0.6s;
+  position: absolute;
+  left: 0%;
+  overflow: hidden;
+}
 
-    &::before {
-      transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
-        transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    }
-  }
+.sliding-img-right {
+  z-index: 2;
+  height: 55px;
+  width: auto;
+  opacity: 0;
+  transition: all 0.6s;
+  position: absolute;
+  right: 60%;
+  overflow: hidden;
+}
 
-  &.is-active {
-    .hamburger-inner {
-      transform: translate3d(0, -10px, 0) rotate(-45deg);
-      transition-delay: 0.22s;
-      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 
-      &::after {
-        top: 0;
-        opacity: 0;
-        transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
-          opacity 0.1s 0.22s linear;
-      }
+.show-letter-n {
+  left: -35%;
+  opacity: 1;
+}
 
-      &::before {
-        top: 0;
-        transform: rotate(-90deg);
-        transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
-          transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-      }
-    }
-  }
+.show-letter-21 {
+  right: 0;
+  opacity: 1;
 }
 
 
