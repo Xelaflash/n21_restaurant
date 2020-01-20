@@ -1,0 +1,25 @@
+<nav id="navbar">
+  <div class="nav-wrapper">
+    <div class="logo">
+      <% link_to "/index.html", 'aria-label': "Back to Home" do %>
+        <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579523189/nav-logo.png", alt: "N21 Restaurant - Logo", id:"nav-logo-left" %>
+      <% end %>
+    </div>
+    <!-- Right Navigation -->
+    <div class="navbar-middle">
+      <ul class="nav-list">
+        <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Gallery", "#gallery-section", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Private events", "private_events-section", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Contact", "contact-section", class:"navbar-link" %></li>
+      </ul>
+    </div>
+    <div class="social-wrapper">
+      <div class="social-links">
+        <a href="https://www.facebook.com/N21restaurant/" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-square"></i></i></a>
+        <a href="https://www.instagram.com/n21restaurant/?hl=en" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="tel:+842839300840" class="nav-icon" aria-label="Telephone"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>

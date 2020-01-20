@@ -8,10 +8,11 @@
   <!-- Use the title from a page's frontmatter if it has one -->
   <title><%= current_page.data.title %></title>
   <%= stylesheet_link_tag "application" %>
+  <script src="https://kit.fontawesome.com/9dc86a7df3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+  <%= partial "layouts/shared/navbar" %>
   <%= yield %>
   <%= javascript_include_tag "bundle" %>
 </body>
