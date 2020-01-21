@@ -2,26 +2,28 @@
     width: 100%;
     min-height: 100%;
     padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    // display: inline-flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .container-contact1 {
-    width: 1163px;
+    width: 100%;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 90px 130px 88px 148px;
+    // display: inline-flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
+    padding: 90px 130px 88px8px;
 }
 
 .contact1-form {
-    width: 390px;
+    width: 100%;
 }
 
 .contact1-form-title {
@@ -56,7 +58,8 @@ textarea.input1 + .shadow-input1 {
 
 .wrap-input1 {
     position: relative;
-    width: 100%;
+    display: inline-flex;
+    width: 48%;
     z-index: 1;
     margin-bottom: 20px;
 }
@@ -129,4 +132,63 @@ textarea.input1 + .shadow-input1 {
 
 .contact1-form-btn:hover i {
     transform: translateX(10px);
+}
+
+#message-area {
+    width: 97%;
+}
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+    position: relative;
+}
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: white;
+    border: 1px solid #c80000;
+    border-radius: 13px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    pointer-events: none;
+    font-family: Montserrat-Medium;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+    content: "\f06a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+    }
 }
