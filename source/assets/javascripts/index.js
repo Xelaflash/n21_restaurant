@@ -9,12 +9,14 @@ import { handleFirstTab } from './components/keyboard_focus';
 window.addEventListener('keydown', handleFirstTab);
 
 // Sidenav
-const sidenavTrigger = document.getElementById('sidenav-trigger');
+const sidenavTriggers = document.querySelectorAll('.sidenav-trigger');
 const sideNavLinks = document.querySelectorAll('.sidenav-link');
 
-sidenavTrigger.addEventListener('click', () => {
-  toggleNav();
-  toggleImg();
+sidenavTriggers.forEach(function(trigger) {
+  trigger.addEventListener('click', () => {
+    toggleNav();
+    toggleImg();
+  });
 });
 
 sideNavLinks.forEach(function(link) {

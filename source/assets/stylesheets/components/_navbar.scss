@@ -95,8 +95,8 @@
   height: 70px;
   margin-top: 3px;
   border-radius: 5px;
-  transition: 0.2s;
-  opacity: 0;
+  // transition: 0.2s;
+  // opacity: 0;
 }
 
 .sidenav {
@@ -111,7 +111,7 @@
   background-color: $red;
   overflow: auto;
   white-space: nowrap;
-  transition: 0.6s;
+  transition: all 0.5s;
 
 
   ul {
@@ -178,10 +178,10 @@
   width: 50px;
   z-index: 4;
   cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.3s;
-  transition-timing-function: linear;
-  margin: 0 70px 0 0;
+  // if logo effect left/right use below margin
+  // margin: 0 70px 0 0;
+  // if logo effect down ue below:
+  margin: 0;
   padding: 0;
   border: 0;
   position: relative;
@@ -191,35 +191,42 @@
   position: relative;
 }
 
-.sliding-img-left {
-  z-index: 2;
+.sliding-img-left,
+.sliding-img-right {
+  z-index: 4;
+  cursor: pointer;
   height: 55px;
   width: auto;
   opacity: 0;
-  transition: all 0.6s;
+  transition: all 0.5s;
   position: absolute;
-  left: 0%;
   overflow: hidden;
+}
+
+.sliding-img-left {
+  left: 0;
 }
 
 .sliding-img-right {
-  z-index: 2;
-  height: 55px;
-  width: auto;
-  opacity: 0;
-  transition: all 0.6s;
-  position: absolute;
-  right: 60%;
-  overflow: hidden;
+  // if logo effect left/right use below
+  // right: 70%;
+  // if logo effect down ue below
+  right: 15px;
+  top: 0;
 }
 
 .show-letter-n {
-  left: -35%;
+  // sliding left
+  // left: -35%;
+  // logo 21 at bottom
+  left: -35px;
   opacity: 1;
 }
 
 .show-letter-21 {
-  right: 0;
+  // right: 0;
+  // logo 21 at bottom
+  top: 65px;
   opacity: 1;
 }
 
