@@ -1,4 +1,5 @@
 import '@babel/polyfill';
+import './components/contact';
 
 // components JS files
 import { toggleNav, toggleImg } from './components/mobile_nav';

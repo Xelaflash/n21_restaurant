@@ -56,6 +56,12 @@ h1 {
   margin-left: auto;
 }
 
+.row {
+  display: flex;
+  // flex-wrap: wrap;
+  // margin: 0 -15px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -81,7 +87,6 @@ h1 {
 }
 
 // Restore Bootstrap 3 "hidden" utility classes.
-
 /* Breakpoint XS */
 @media (max-width: 575px) {
 
