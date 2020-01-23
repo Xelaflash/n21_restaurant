@@ -302,3 +302,18 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item;
 }
+
+body.user-is-tabbing *:focus,
+.selected-flag:focus {
+  outline: 2px solid #7acdfe !important;
+  /* for non-webkit browsers */
+  outline: 3px auto -webkit-focus-ring-color !important;
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus,
+body:not(.user-is-tabbing) a:focus {
+  outline: none !important;
+}
