@@ -1,12 +1,12 @@
 .footer {
-  background: $cream;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
   margin-top: 20px;
-  color: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 .footer-links {
@@ -15,7 +15,7 @@
 }
 
 .footer-links a {
-  color: black;
+  color: white;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
@@ -28,4 +28,14 @@
 
 .footer .fa-heart {
   color: $red;
+}
+
+.logo-footer {
+  height: 100%;
+  width: 70px;
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
 }
