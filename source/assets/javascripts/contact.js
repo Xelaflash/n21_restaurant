@@ -1,71 +1,58 @@
-// (function($) {
-//   /*= =================================================================
-//     [ Validate ] */
-//   const name = $('.validate-input input[name="name"]');
-//   const email = $('.validate-input input[name="email"]');
-//   const subject = $('.validate-input input[name="subject"]');
-//   const message = $('.validate-input textarea[name="message"]');
+const name = document.querySelector('input[name="name"]');
+const email = document.querySelector('input[name="email"]');
+const subject = document.querySelector('input[name="subject"]');
+const message = document.querySelector('textarea[name="message"]');
 
-//   $('.validate-form').on('submit', function() {
-//     let check = true;
+// TODO: Phone validation!!
+const form = document.querySelector('.validate-form');
 
-//     if (
-//       $(name)
-//         .val()
-//         .trim() == ''
-//     ) {
-//       showValidate(name);
-//       check = false;
-//     }
+function showValidate(input) {
+  const thisAlert = input.parentElement;
+  thisAlert.classList.add('alert-validate');
+}
 
-//     if (
-//       $(subject)
-//         .val()
-//         .trim() == ''
-//     ) {
-//       showValidate(subject);
-//       check = false;
-//     }
+function hideValidate(input) {
+  const thisAlert = input.parentElement;
+  thisAlert.classList.remove('alert-validate');
+}
 
-//     if (
-//       $(email)
-//         .val()
-//         .trim()
-//         .match(
-//           /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/
-//         ) == null
-//     ) {
-//       showValidate(email);
-//       check = false;
-//     }
+function validateForm() {
+  const mailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  let check = true;
 
-//     if (
-//       $(message)
-//         .val()
-//         .trim() == ''
-//     ) {
-//       showValidate(message);
-//       check = false;
-//     }
+  if (name.value.trim() === '') {
+    showValidate(name);
+    check = false;
+  }
+  if (email.value.trim().match(mailRegex) == null) {
+    showValidate(email);
+    check = false;
+  }
 
-//     return check;
-//   });
+  if (subject.value.trim() === '') {
+    showValidate(subject);
+    check = false;
+  }
+  if (message.value.trim() === '') {
+    showValidate(message);
+    check = false;
+  }
 
-//   $('.validate-form .input1').each(function() {
-//     $(this).focus(function() {
-//       hideValidate(this);
-//     });
-//   });
+  return check;
+}
 
-//   function showValidate(input) {
-//     const thisAlert = $(input).parent();
+const inputs = document.querySelectorAll('.input1');
+inputs.forEach(input => {
+  input.addEventListener('blur', () => {
+    hideValidate(input);
+  });
+});
 
-//     $(thisAlert).addClass('alert-validate');
-//   }
-
-//   function hideValidate(input) {
-//     const thisAlert = $(input).parent();
-
-//     $(thisAlert).removeClass('alert-validate');
-//   }
-// })(jQuery);
+form.addEventListener('submit', function(event) {
+  const validated = validateForm();
+  if (validated === false) {
+    event.preventDefault();
+  } else {
+    form.submit();
+  }
+});
