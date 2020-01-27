@@ -148,11 +148,11 @@ textarea.input1+.shadow-input1 {
 .alert-validate::before {
   content: attr(data-validate);
   position: absolute;
-  max-width: 70%;
+  max-width: 55%;
   background-color: white;
   border: 1px solid #c80000;
   border-radius: 13px;
-  padding: 4px 25px 4px 10px;
+  padding: 5px 25px 5px 10px;
   top: 50%;
   transform: translateY(-50%);
   right: 8px;
@@ -162,10 +162,8 @@ textarea.input1+.shadow-input1 {
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
-
   visibility: hidden;
   opacity: 0;
-
   transition: opacity 0.4s;
 }
 
