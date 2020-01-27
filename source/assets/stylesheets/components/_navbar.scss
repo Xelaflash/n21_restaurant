@@ -1,0 +1,263 @@
+#navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.6s linear, opacity 0.6s linear;
+}
+
+#navbar.scrolled {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-wrapper {
+  height: 80px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-logo-left {
+  width: 70px;
+  border-radius: 5px;
+}
+
+/* Middle section */
+.navbar-middle {
+  margin-left: 160px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Navbar link */
+.navbar-item {
+  padding: 0 25px;
+}
+
+.navbar-link {
+  color: $white;
+  font-size: 20px;
+  font-family: $headers-font;
+  letter-spacing: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: $cream;
+}
+
+.navbar-link:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: $cream;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-link:hover:after {
+  width: 100%;
+  color: $cream;
+  left: 0;
+}
+
+.nav-icon {
+  color: $white;
+  font-size: 32px;
+  margin: 0 10px;
+  padding-bottom: 0;
+}
+
+.nav-icon:hover {
+  color: $cream;
+  transition: 0.3s ease;
+}
+
+
+// start sidenav
+
+.mobile_nav {
+  position: absolute;
+  right: 20px;
+}
+
+#logo-sideNav {
+  height: 70px;
+  margin-top: 3px;
+  border-radius: 5px;
+  // transition: 0.2s;
+  // opacity: 0;
+}
+
+.sidenav {
+  height: 100%;
+  padding: 0 30px;
+  width: 0;
+  position: fixed;
+  opacity: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $red;
+  overflow: auto;
+  white-space: nowrap;
+  transition: all 0.5s;
+
+
+  ul {
+    margin: 60px auto 0 auto;
+    text-align: center;
+  }
+
+  li {
+    margin: auto;
+    width: fit-content;
+    padding: 40px 0;
+  }
+}
+
+.show-sidenav {
+  width: 100%;
+  opacity: 1;
+
+  #logo-sideNav {
+    opacity: 1;
+  }
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 26px;
+  font-family: $headers-font;
+  color: $white;
+}
+
+.sidenav a:hover {
+  color: $cream;
+}
+
+.social-wrapper-sidenav {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.social-links-sidenav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-links-sidenav a {
+  color: $white;
+  cursor: pointer;
+  font-size: 46px;
+  padding: 0px 20px;
+
+  &:hover {
+    color: $cream;
+  }
+}
+
+// Hamburger
+.hamburger {
+  background: url('https://res.cloudinary.com/dpra9vwkq/image/upload/v1579354123/burger-Tuning_White.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  width: 50px;
+  z-index: 4;
+  cursor: pointer;
+  // if logo effect left/right use below margin
+  // margin: 0 70px 0 0;
+  // if logo effect down ue below:
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+}
+
+.front-position {
+  position: relative;
+}
+
+.sliding-img-left,
+.sliding-img-right {
+  z-index: 4;
+  cursor: pointer;
+  height: 55px;
+  width: auto;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  overflow: hidden;
+}
+
+.sliding-img-left {
+  left: 0;
+}
+
+.sliding-img-right {
+  // if logo effect left/right use below
+  // right: 70%;
+  // if logo effect down ue below
+  right: 15px;
+  top: 0;
+}
+
+.show-letter-n {
+  // sliding left
+  // left: -35%;
+  // logo 21 at bottom
+  left: -35px;
+  opacity: 1;
+}
+
+.show-letter-21 {
+  // right: 0;
+  // logo 21 at bottom
+  top: 65px;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .nav-wrapper {
+    padding: 0px 15px;
+  }
+
+  .navbar-middle {
+    margin-left: 0;
+  }
+
+  .navbar-item {
+    padding: 0 15px;
+  }
+
+  .navbar-link {
+    font-size: 18px;
+  }
+
+  .nav-icon {
+    font-size: 28px;
+  }
+
+}
