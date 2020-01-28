@@ -1,6 +1,8 @@
 import '@babel/polyfill';
 import './components/contact';
 
+// plugins import
+import { mySwiper } from './plugins/swiper';
 // components JS files
 import { toggleNav, toggleImg } from './components/mobile_nav';
 import { handleFirstTab } from './components/keyboard_focus';
