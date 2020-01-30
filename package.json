@@ -39,7 +39,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
-    "glob": "^7.1.6",
-    "swiper": "^5.3.0"
+    "glob": "^7.1.6"
   }
 }
