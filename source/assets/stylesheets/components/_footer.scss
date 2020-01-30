@@ -1,12 +1,12 @@
 .footer {
-  background: black;
+  background: $black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
   margin-top: 20px;
-  color: white;
+  color: $white;
 }
 
 .footer-links {
@@ -15,9 +15,9 @@
 }
 
 .footer-links a {
-  color: white;
+  color: $white;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 26px;
   padding: 0px 10px;
 }
 
