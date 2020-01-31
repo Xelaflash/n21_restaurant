@@ -149,8 +149,8 @@ textarea.input1+.shadow-input1 {
   content: attr(data-validate);
   position: absolute;
   max-width: 55%;
-  background-color: white;
-  border: 1px solid #c80000;
+  background-color: $white;
+  border: 1px solid $red;
   border-radius: 13px;
   padding: 5px 25px 5px 10px;
   top: 50%;
@@ -158,7 +158,7 @@ textarea.input1+.shadow-input1 {
   right: 8px;
   pointer-events: none;
   font-family: $body-font;
-  color: #c80000;
+  color: $red;
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
@@ -172,7 +172,7 @@ textarea.input1+.shadow-input1 {
   font-family: FontAwesome;
   display: block;
   position: absolute;
-  color: #c80000;
+  color: $red;
   font-size: 15px;
   top: 50%;
   transform: translateY(-50%);
@@ -189,4 +189,41 @@ textarea.input1+.shadow-input1 {
     visibility: visible;
     opacity: 1;
   }
+}
+
+// flag
+.iti__flag {
+  background-image: url("../images/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../images/flags@2x.png");
+  }
+}
+
+.iti {
+  display: flex;
+}
+
+.iti .flag-container {
+  padding: 0;
+}
+
+// .iti__country-list {
+//   z-index: 10;
+// }
+
+// for safari (do not take modal content color cause dropdown out of flow)
+.iti__country-name {
+  color: $black;
+}
+
+.iti__selected-flag {
+  border-radius: 24px;
+}
+
+.hide {
+  display: none;
 }

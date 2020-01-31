@@ -3,6 +3,7 @@ import './components/contact';
 
 // plugins import
 import './plugins/swiper';
+import './plugins/intl_tel';
 // components JS files
 import { toggleNav, toggleImg } from './components/mobile_nav';
 import { handleFirstTab } from './components/keyboard_focus';
