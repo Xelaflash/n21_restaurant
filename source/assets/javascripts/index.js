@@ -2,6 +2,7 @@ import '@babel/polyfill';
 import './components/contact';
 
 // plugins import
+import './plugins/intl_tel';
 
 // components JS files
 import { toggleNav, toggleImg } from './components/mobile_nav';
