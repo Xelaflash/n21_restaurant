@@ -45,18 +45,26 @@
 
 // Mapbox styling
 #map {
-  height: 380px;
-  width: 100%;
+  height: 450px;
+  width: 550px;
   margin: 50px auto;
-}
-
-.mapboxgl-popup {
-  max-width: 200px;
 }
 
 .mapboxgl-popup-content {
   text-align: center;
-  font-family: $body-font;
+  font-family: $headers-font;
+  padding: 20px !important;
+  letter-spacing: 0.2em;
+
+  h5 {
+    margin: 10px auto 0;
+    font-size: 18px;
+  }
+}
+
+.popup-logo {
+  width: 50px;
+  height: auto;
 }
 
 // END Mapbox styling
