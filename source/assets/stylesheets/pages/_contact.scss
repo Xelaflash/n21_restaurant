@@ -1,5 +1,6 @@
 #contact-section {
-  margin-top: 100px;
+  padding-top: 80px;
+  margin-bottom: 40px;
 }
 
 input {
@@ -49,6 +50,7 @@ input.input1 {
   padding: 0 30px;
 }
 
+
 input.input1+.shadow-input1 {
   border-radius: 25px;
 }
@@ -74,9 +76,13 @@ textarea.input1+.shadow-input1 {
   width: 100%;
   background: #eeeeee;
   font-family: $body-font;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
   color: #666666;
+}
+
+.input1::placeholder {
+  font-weight: lighter;
 }
 
 .focus-input1 {

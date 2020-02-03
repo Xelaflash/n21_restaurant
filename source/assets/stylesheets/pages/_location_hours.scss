@@ -1,0 +1,45 @@
+#location-hour-section {
+  background: $light-gray;
+  padding: 20px 0;
+}
+
+.subsection-title {
+  font-family: $headers-font;
+  font-size: 26px;
+  letter-spacing: 0.1em;
+  margin: 10px auto 5px auto;
+  font-style: italic;
+}
+
+.flex-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.subsection-sep {
+  background: $red;
+  height: 5px;
+  border-radius: 50px;
+  width: 35px;
+  margin: 12px 0 10px 0;
+}
+
+.details-wrapper {
+  margin: 40px auto;
+}
+
+
+#address {
+  line-height: 1.8;
+  font-style: normal;
+}
+
+.contact-link {
+  color: $black;
+}
+
+.contact-link:hover {
+  color: $black;
+  text-decoration: none;
+}
