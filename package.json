@@ -11,7 +11,7 @@
     "@babel/preset-env": "^7.4.4",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
-    "css-loader": "^2.1.1",
+    "css-loader": "^3.4.2",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
@@ -40,6 +40,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "glob": "^7.1.6",
-    "intl-tel-input": "^16.0.8"
+    "intl-tel-input": "^16.0.8",
+    "mapbox-gl": "^1.7.0"
   }
 }
