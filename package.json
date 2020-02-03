@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
-    "glob": "^7.1.6"
+    "glob": "^7.1.6",
+    "intl-tel-input": "^16.0.8"
   }
 }
