@@ -69,7 +69,6 @@
 
   .flex-right {
     width: 100%;
-    height: auto;
     margin: 50px auto 0 auto;
   }
 
@@ -88,7 +87,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .about-pic {
     width: 80%;
     margin: 15px 0;
@@ -100,6 +99,7 @@
 
   .flex-right {
     width: 100%;
+    min-height: 650px;
     text-align: center;
     margin: 10px 0;
   }
@@ -126,5 +126,3 @@
     top: 250px;
   }
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {}

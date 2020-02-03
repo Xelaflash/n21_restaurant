@@ -40,7 +40,6 @@
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "glob": "^7.1.6",
-    "intl-tel-input": "^16.0.8",
-    "swiper": "^5.3.0"
+    "intl-tel-input": "^16.0.8"
   }
 }
