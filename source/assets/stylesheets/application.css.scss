@@ -57,12 +57,6 @@ h1 {
   margin-left: auto;
 }
 
-.row {
-  display: flex;
-  // flex-wrap: wrap;
-  // margin: 0 -15px;
-}
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -171,5 +165,17 @@ h1 {
   .hidden-unless-md,
   .hidden-unless-lg {
     display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrap-input1 {
+    width: 49%;
+    margin: 15px 0px;
   }
 }
