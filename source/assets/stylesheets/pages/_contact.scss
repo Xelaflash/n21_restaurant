@@ -66,7 +66,7 @@ textarea.input1+.shadow-input1 {
 .wrap-input1 {
   position: relative;
   width: 100%;
-  margin: 15px 10px;
+  margin: 25px 0px;
 }
 
 .input1 {
@@ -135,7 +135,8 @@ textarea.input1+.shadow-input1 {
 }
 
 #message-area {
-  margin: 10px 10px;
+  width: 100%;
+  margin: 10px 0px;
 }
 
 /*------------------------------------------------------------------
@@ -165,6 +166,7 @@ textarea.input1+.shadow-input1 {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.4s;
+  z-index: 10;
 }
 
 .alert-validate::after {
@@ -177,6 +179,7 @@ textarea.input1+.shadow-input1 {
   top: 50%;
   transform: translateY(-50%);
   right: 13px;
+  z-index: 10;
 }
 
 .alert-validate:hover:before {
@@ -226,4 +229,19 @@ textarea.input1+.shadow-input1 {
 
 .hide {
   display: none;
+}
+
+#valid-msg {
+  color: $green;
+  position: absolute;
+  right: 15px;
+  top: 33%;
+
+}
+
+#error-msg {
+  color: $red;
+  position: absolute;
+  right: 15px;
+  top: 33%;
 }

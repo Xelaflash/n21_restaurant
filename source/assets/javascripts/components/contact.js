@@ -1,4 +1,5 @@
 const name = document.querySelector('input[name="name"]');
+const phone = document.querySelector('input[name="phone"]');
 const email = document.querySelector('input[name="email"]');
 const subject = document.querySelector('input[name="subject"]');
 const message = document.querySelector('textarea[name="message"]');
@@ -28,7 +29,10 @@ function validateForm() {
     showValidate(email);
     check = false;
   }
-
+  if (phone.value.trim() === '') {
+    showValidate(phone);
+    check = false;
+  }
   if (subject.value.trim() === '') {
     showValidate(subject);
     check = false;
