@@ -1,6 +1,6 @@
 #location-hour-section {
   background: $light-gray;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .subsection-title {
@@ -57,7 +57,7 @@
 #map {
   height: 450px;
   width: 550px;
-  margin: 50px auto;
+  margin: auto;
 }
 
 .mapboxgl-popup-content {
@@ -81,6 +81,7 @@
   #map {
     height: 400px;
     width: 100%;
+    margin: 50px auto;
   }
 }
 
