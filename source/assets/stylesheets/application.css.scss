@@ -64,6 +64,7 @@ h1 {
 @media (min-width: 768px) {
   .row {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -176,4 +177,5 @@ h1 {
   .hidden-unless-lg {
     display: none !important;
   }
+}
 }
