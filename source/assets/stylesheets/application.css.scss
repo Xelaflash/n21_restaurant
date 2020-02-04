@@ -36,7 +36,7 @@ h1 {
 }
 
 .title-sep {
-  background: #851D21;
+  background: $red;
   height: 7px;
   border-radius: 50px;
   width: 10%;
@@ -48,6 +48,10 @@ h1 {
   height: 100%;
 }
 
+.page {
+  padding-top: 60px;
+}
+
 // Utilities classes (take on Bootstrap)
 .container {
   width: 100%;
@@ -55,6 +59,13 @@ h1 {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 576px) {
@@ -167,15 +178,4 @@ h1 {
     display: none !important;
   }
 }
-
-@media (min-width: 768px) {
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .wrap-input1 {
-    width: 49%;
-    margin: 15px 0px;
-  }
 }
