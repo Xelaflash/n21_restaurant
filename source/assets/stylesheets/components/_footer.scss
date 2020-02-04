@@ -1,6 +1,7 @@
 .footer {
-  background: $black;
-  min-height: 100px;
+  background: $red;
+  ;
+  min-height: 150px;
   color: $white;
 }
 
@@ -21,17 +22,37 @@
   }
 }
 
-
 .footer-links a:hover {
-  opacity: 0.2;
-}
-
-.footer .fa-heart {
-  color: $red;
+  opacity: 0.6;
 }
 
 .logo-footer {
   width: 70px;
+}
+
+#copyright {
+  max-width: 180px;
+  text-align: center;
+}
+
+#colophon {
+  background: #952125;
+  color: $white;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.credits {
+  p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.logo-dev {
+  height: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
 }
 
 @media (max-width: 768px) {
@@ -54,7 +75,7 @@
   }
 
   #copyright {
-    text-align: center;
+    max-width: 100%;
 
     p {
       margin: 0 auto;
@@ -70,10 +91,4 @@
     justify-content: space-between;
     padding: 0px 50px;
   }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-  .logo-footer {}
 }
