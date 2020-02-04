@@ -12,9 +12,7 @@
 }
 
 .flex-section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .subsection-sep {
@@ -22,11 +20,23 @@
   height: 5px;
   border-radius: 50px;
   width: 35px;
-  margin: 12px 0 10px 0;
+}
+
+@media (min-width: 992px) {
+  .flex-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .subsection-sep {
+    margin: 12px 0 10px 0;
+  }
 }
 
 .details-wrapper {
-  margin: 40px auto;
+  margin: 10px auto 50px auto;
 }
 
 #address {
@@ -66,5 +76,13 @@
   width: 50px;
   height: auto;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+}
+
 
 // END Mapbox styling

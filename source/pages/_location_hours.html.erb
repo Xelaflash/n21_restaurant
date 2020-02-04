@@ -1,32 +1,37 @@
 <section id="location-hour-section">
   <div class="container flex-section">
-    <div class="location">
-      <h3 class="subsection-title">Location</h3>
-      <hr class="subsection-sep" />
-      <address class="details-wrapper" id="address">
-        21 Ngô Thời Nhiệm, Phường 6, Quận 3 <br />
-        Ho Chi Minh City, Vietnam
-      </address>
+    <div class="location-hour-left">
+      <div class="location">
+        <h3 class="subsection-title">Location</h3>
+        <hr class="subsection-sep" />
+        <address class="details-wrapper" id="address">
+          21 Ngô Thời Nhiệm, Phường 6, Quận 3 <br />
+          Ho Chi Minh City, Vietnam
+        </address>
+      </div>
+      <div class="contact-medium">
+        <h3 class="subsection-title">Contact Details</h3>
+        <hr class="subsection-sep" />
+        <div class="details-wrapper">
+          <p>
+            <a class="contact-link" href="mailto:bookings@n21.com" aria-label="Email">bookings@n21.com</a>
+          </p>
+          <p>
+            <a class="contact-link" href="tel:+842839300840" aria-label="Telephone">+84 28 3930 0840</a>
+          </p>
+        </div>
+      </div>
+      <div class="hours">
+        <h3 class="subsection-title">Hours</h3>
+        <hr class="subsection-sep" />
+        <div class="details-wrapper">
+          <p>Every day <strong>6:00 AM - 11:00 PM</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="location-hour-right">
       <div id="map" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
-    <div class="contact-medium">
-      <h3 class="subsection-title">Contact Details</h3>
-      <hr class="subsection-sep" />
-      <div class="details-wrapper">
-        <p>
-          <a class="contact-link" href="mailto:bookings@n21.com" aria-label="Email">bookings@n21.com</a>
-        </p>
-        <p>
-          <a class="contact-link" href="tel:+842839300840" aria-label="Telephone">+84 28 3930 0840</a>
-        </p>
-      </div>
-    </div>
-    <div class="hours">
-      <h3 class="subsection-title">Hours</h3>
-      <hr class="subsection-sep" />
-      <div class="details-wrapper">
-        <p>Every day <strong>6:00 AM - 11:00 PM</strong></p>
-      </div>
-    </div>
+
   </div>
 </section>

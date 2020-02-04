@@ -57,10 +57,10 @@ h1 {
   margin-left: auto;
 }
 
-.row {
-  display: flex;
-  // flex-wrap: wrap;
-  // margin: 0 -15px;
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
 }
 
 @media (min-width: 576px) {
