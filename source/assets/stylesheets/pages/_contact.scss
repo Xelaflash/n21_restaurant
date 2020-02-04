@@ -70,6 +70,14 @@ textarea.input1+.shadow-input1 {
   margin: 25px 0px;
 }
 
+
+@media (min-width: 768px) {
+  .wrap-input1 {
+    width: 49%;
+    margin: 15px 0px;
+  }
+}
+
 .input1 {
   display: block;
   width: 100%;
