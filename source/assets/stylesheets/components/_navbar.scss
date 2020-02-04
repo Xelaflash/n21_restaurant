@@ -256,5 +256,23 @@
   .nav-icon {
     font-size: 28px;
   }
+}
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .sidenav li {
+    padding: 25px 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .sidenav ul {
+    margin: 100px auto 0 auto;
+  }
+
+  .social-wrapper-sidenav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
