@@ -43,7 +43,6 @@ const main = document.querySelector('.main');
 
 function mainMarginBottom() {
   const footerHeight = footer.clientHeight;
-  console.log(footerHeight);
   main.style.marginBottom = `${footerHeight}px`;
 }
 // run on page load and then on window resize

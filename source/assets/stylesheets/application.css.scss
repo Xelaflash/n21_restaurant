@@ -2,10 +2,8 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/reset";
-// @import "config/bootstrap_variables";
 
 // External libraries
-// @import "bootstrap/scss/bootstrap";
 @import "intl-tel-input/src/css/intlTelInput";
 
 // Your CSS partials
@@ -67,6 +65,9 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   filter: saturate(1.5);
+  z-index: -10;
+  box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 1),
+    inset 0 -15px 15px -15px rgba(0, 0, 0, 1);
 }
 
 // Utilities classes (take on Bootstrap)
