@@ -1,14 +1,14 @@
-import '@babel/polyfill';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import './components/contact';
-
 // plugins import
+import '@babel/polyfill';
 import './plugins/intl_tel';
-import { initMapbox } from './plugins/mapbox';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 // components JS files
+import './components/contact';
 import { toggleNav, toggleImg } from './components/mobile_nav';
 import { handleFirstTab } from './components/keyboard_focus';
 import { checkScroll } from './components/nav_scroll';
+import { initMapbox } from './plugins/mapbox';
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
@@ -36,3 +36,15 @@ sideNavLinks.forEach(function(link) {
 
 // Mapbox
 initMapbox();
+
+// add margin to main for parallax footer
+const footer = document.querySelector('.footer');
+const main = document.querySelector('.main');
+
+function mainMarginBottom() {
+  const footerHeight = footer.clientHeight;
+  main.style.marginBottom = `${footerHeight}px`;
+}
+// run on page load and then on window resize
+mainMarginBottom();
+window.addEventListener('resize', mainMarginBottom);
