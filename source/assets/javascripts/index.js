@@ -2,7 +2,6 @@
 import '@babel/polyfill';
 import './plugins/intl_tel';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import './plugins/rellax';
 
 // components JS files
 import './components/contact';

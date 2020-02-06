@@ -42,7 +42,6 @@ h1 {
   width: 10%;
 }
 
-
 .freezePage {
   overflow: hidden;
   height: 100%;
@@ -53,10 +52,15 @@ h1 {
 }
 
 // Parallax images
-.parallax-pic {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+.parallax {
+  height: 600px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: saturate(1.5);
 }
-
 
 // Utilities classes (take on Bootstrap)
 .container {
@@ -101,7 +105,6 @@ h1 {
 // Restore Bootstrap 3 "hidden" utility classes.
 /* Breakpoint XS */
 @media (max-width: 575px) {
-
   .hidden-xs-down,
   .hidden-sm-down,
   .hidden-md-down,
@@ -114,12 +117,10 @@ h1 {
   .hidden-unless-xl {
     display: none !important;
   }
-
 }
 
 /* Breakpoint SM */
 @media (min-width: 576px) and (max-width: 767px) {
-
   .hidden-sm-down,
   .hidden-md-down,
   .hidden-lg-down,
@@ -136,7 +137,6 @@ h1 {
 
 /* Breakpoint MD */
 @media (min-width: 768px) and (max-width: 991px) {
-
   .hidden-md-down,
   .hidden-lg-down,
   .hidden-xl-down,
@@ -153,7 +153,6 @@ h1 {
 
 /* Breakpoint LG */
 @media (min-width: 992px) and (max-width: 1199px) {
-
   .hidden-lg-down,
   .hidden-xl-down,
   .hidden-xs-up,
@@ -170,7 +169,6 @@ h1 {
 
 /* Breakpoint XL */
 @media (min-width: 1200px) {
-
   .hidden-xl-down,
   .hidden-xs-up,
   .hidden-sm-up,
