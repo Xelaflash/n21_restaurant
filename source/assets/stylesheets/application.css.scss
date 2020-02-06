@@ -52,6 +52,12 @@ h1 {
   padding-top: 60px;
 }
 
+// Parallax images
+.parallax-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+
 // Utilities classes (take on Bootstrap)
 .container {
   width: 100%;

@@ -41,6 +41,7 @@
     "@babel/polyfill": "^7.7.0",
     "glob": "^7.1.6",
     "intl-tel-input": "^16.0.8",
-    "mapbox-gl": "^1.7.0"
+    "mapbox-gl": "^1.7.0",
+    "rellax": "^1.12.0"
   }
 }

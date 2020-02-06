@@ -1,14 +1,15 @@
-import '@babel/polyfill';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import './components/contact';
-
 // plugins import
+import '@babel/polyfill';
 import './plugins/intl_tel';
-import { initMapbox } from './plugins/mapbox';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import './plugins/rellax';
+
 // components JS files
+import './components/contact';
 import { toggleNav, toggleImg } from './components/mobile_nav';
 import { handleFirstTab } from './components/keyboard_focus';
 import { checkScroll } from './components/nav_scroll';
+import { initMapbox } from './plugins/mapbox';
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
