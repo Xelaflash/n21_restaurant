@@ -27,6 +27,13 @@ h1 {
   font-family: $headers-font;
 }
 
+.main {
+  position: relative;
+  z-index: 20;
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.2);
+  background: $white;
+}
+
 .page-title {
   font-family: $headers-font;
   letter-spacing: 0.1em;
@@ -60,7 +67,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   filter: saturate(1.5);
-  box-shadow: inset 0px 0px 10px 5px rgb(255, 255, 255);
 }
 
 // Utilities classes (take on Bootstrap)
