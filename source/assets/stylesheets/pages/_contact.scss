@@ -79,8 +79,9 @@ textarea.input1+.shadow-input1 {
 }
 
 .input1 {
-  display: block;
+  box-sizing: border-box;
   width: 100%;
+  display: block;
   background: #eeeeee;
   font-family: $body-font;
   font-size: 14px;
