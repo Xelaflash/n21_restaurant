@@ -116,9 +116,14 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 1) {
+  #about-section {
+    padding-bottom: 0;
+  }
+
   #pic-table {
     top: 140px;
   }
+
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
