@@ -12,7 +12,7 @@ const errorMap = ['Invalid number', 'Invalid country code', 'Too short', 'Too lo
 const phoneNumber = intlTelInput(input, {
   utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/utils.js',
   separateDialCode: true,
-  hiddenInput: 'full_phone',
+  hiddenInput: 'phone',
   formatOnDisplay: true,
   initialCountry: 'vn',
   preferredCountries: ['vn'],
