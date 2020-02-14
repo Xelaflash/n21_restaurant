@@ -97,6 +97,83 @@
   opacity: 0.8;
 }
 
+.feature-list {
+  position: relative;
+  margin: 20px auto 50px;
+}
+
+.icon-default {
+  position: absolute;
+  left: 50%;
+  top: -59px;
+  height: 59px;
+  width: 254px;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+.icon-skeen {
+  background: url('https://res.cloudinary.com/dpra9vwkq/image/upload/v1581692465/pattern-skeen.png') no-repeat center center;
+}
+
+.build-title {
+  padding-top: 40px;
+
+  h6 {
+    color: $gray;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6em;
+  }
+}
+
+.reinsurance-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reinsurance-icons {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.reinsurance-icon {
+  height: 80px;
+  width: auto;
+}
+
+.reinsurance-item {
+  h5 {
+    font-family: $headers-font;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: 15px auto;
+  }
+
+  p {
+    margin: 25px auto;
+    width: 90%;
+    color: $gray;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6em;
+  }
+}
+
+.small-sep {
+  background: $red;
+  height: 4px;
+  border-radius: 50px;
+  width: 20%;
+  margin: auto;
+}
+
+
 @media (max-width: 992px) {
   .menu-text-container {
     width: 80%;
@@ -106,6 +183,10 @@
 
   .menu-section-flex-container {
     margin: 0 auto;
+  }
+
+  .reinsurance-container {
+    flex-wrap: wrap;
   }
 
 }
