@@ -48,3 +48,9 @@ function mainMarginBottom() {
 // run on page load and then on window resize
 mainMarginBottom();
 window.addEventListener('resize', mainMarginBottom);
+
+// Animation on Logo
+const logoAnim = document.querySelector('.logo-wrapper');
+document.addEventListener('DOMContentLoaded', () => {
+  logoAnim.classList.add('zoomIn');
+});
