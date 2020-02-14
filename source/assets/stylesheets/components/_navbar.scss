@@ -100,8 +100,8 @@
 }
 
 #logo-sideNav {
-  height: 85px;
-  margin-top: 20px;
+  height: 75px;
+  margin-top: 25px;
   border-radius: 5px;
 }
 
@@ -180,13 +180,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 55px;
-  width: 50px;
+  height: 45px;
+  width: 40px;
   z-index: 4;
   cursor: pointer;
-  // if logo effect left/right use below margin
-  // margin: 0 70px 0 0;
-  // if logo effect down ue below:
   margin: 0;
   padding: 0;
   border: 0;
@@ -201,7 +198,7 @@
 .sliding-img-right {
   z-index: 4;
   cursor: pointer;
-  height: 55px;
+  height: 45px;
   width: auto;
   opacity: 0;
   transition: all 0.5s;
@@ -214,25 +211,17 @@
 }
 
 .sliding-img-right {
-  // if logo effect left/right use below
-  // right: 70%;
-  // if logo effect down ue below
-  right: 15px;
+  right: 12px;
   top: 0;
 }
 
 .show-letter-n {
-  // sliding left
-  // left: -35%;
-  // logo 21 at bottom
-  left: -35px;
+  left: -31px;
   opacity: 1;
 }
 
 .show-letter-21 {
-  // right: 0;
-  // logo 21 at bottom
-  top: 65px;
+  top: 55px;
   opacity: 1;
 }
 
