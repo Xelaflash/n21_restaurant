@@ -1,0 +1,31 @@
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 20;
+}
+
+.back_to_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTop {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: 2px solid $red;
+}
+
+.fa-arrow-up {
+  color: $red;
+  font-size: 24px;
+}

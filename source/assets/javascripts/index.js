@@ -5,16 +5,21 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 // components JS files
 import './components/contact';
+import { checkScrollToTop } from './components/back_to_top';
 import { toggleNav, toggleImg } from './components/mobile_nav';
 import { handleFirstTab } from './components/keyboard_focus';
 import { checkScroll } from './components/nav_scroll';
+
 import { initMapbox } from './plugins/mapbox';
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
 
-// Navbar visible on scroll
-window.addEventListener('scroll', checkScroll);
+// Navbar visible on scroll + back top top btn
+window.addEventListener('scroll', () => {
+  checkScroll();
+  checkScrollToTop();
+});
 
 // Sidenav
 const sidenavTriggers = document.querySelectorAll('.sidenav-trigger');
