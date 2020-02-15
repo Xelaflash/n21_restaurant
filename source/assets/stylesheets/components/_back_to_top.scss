@@ -51,12 +51,17 @@
   z-index: 1000;
   border-radius: 50%;
   cursor: pointer;
-  background-color: transparent;
+  background-color: $red;
   padding: 0;
-  border: 2px solid $red;
+  border: 2px solid $white;
+  opacity: 0.8;
+}
+
+#backToTop:hover {
+  opacity: 1;
 }
 
 .fa-arrow-up {
-  color: $red;
+  color: $white;
   font-size: 24px;
 }
