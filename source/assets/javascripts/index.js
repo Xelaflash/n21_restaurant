@@ -5,10 +5,10 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 // components JS files
 import './components/contact';
-import { checkScrollToTop } from './components/back_to_top';
 import { toggleNav, toggleImg } from './components/mobile_nav';
 import { handleFirstTab } from './components/keyboard_focus';
 import { checkScroll } from './components/nav_scroll';
+import { checkScrollToTop } from './components/back_to_top';
 
 import { initMapbox } from './plugins/mapbox';
 
