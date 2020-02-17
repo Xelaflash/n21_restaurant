@@ -37,6 +37,24 @@
 
   </div>
 </section>
+
+<section id="gallery-section">
+  <div class="container">
+
+      <div id="lightgallery">
+        <% data.gallery.each do |owner, pic| %>
+          <div class="gallery-pic">
+            <a href="<%= pic.url %>">
+              <%= image_tag pic.url, alt: "N21 Restaurant - Food gallery", loading:"lazy" %>
+            </a>
+          </div>
+        <% end %>
+    </div>
+
+
+  </div>
+</section>
+
 <section class="feature-list">
   <div class="icon-default icon-skeen">
     <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1581692070/icon_cooking.png"

@@ -3408,6 +3408,11 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
+jquery@>=1.7.0:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
+
 js-base64@^2.1.8:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
@@ -3560,6 +3565,13 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+lightgallery@^1.6.12:
+  version "1.6.12"
+  resolved "https://registry.yarnpkg.com/lightgallery/-/lightgallery-1.6.12.tgz#c024428d1488969075dc551a85dddf905adb0e4b"
+  integrity sha512-t8hIgZc3ZvGW9pG8Bd68bXcUj7FWGewaroT7ADYo2fvQTgkqcMMLtXw9yQclS7BF0soadA0B6BN3MWOEiS2pYA==
+  dependencies:
+    jquery ">=1.7.0"
 
 load-json-file@^1.0.0:
   version "1.1.0"
