@@ -48,15 +48,21 @@
 @media (max-device-width: 812px) {
   .banner {
     #slogan {
-      font-size: 31px;
+      font-size: 25px;
+      padding-top: 0;
     }
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
   .banner {
     .logo-wrapper {
-      top: 65%;
+      top: 50%;
+    }
+
+    .logo-banner {
+      width: 120px;
     }
   }
+
 }
