@@ -18,13 +18,13 @@
   }
 
   .zoomIn {
-    animation: 2.2s linear 1s both zoomIn;
+    animation: 5s ease-in 1s both zoomIn;
   }
 
   @keyframes zoomIn {
     from {
       opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.1, 0.1, 1);
     }
 
     50% {
