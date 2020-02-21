@@ -2,6 +2,8 @@
 import '@babel/polyfill';
 import './plugins/intl_tel';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import PhotoSwipe from 'photoswipe/dist/photoswipe';
+import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
 
 // components JS files
 import './components/contact';
@@ -59,3 +61,35 @@ const logoAnim = document.querySelector('.logo-wrapper');
 document.addEventListener('DOMContentLoaded', () => {
   logoAnim.classList.add('zoomIn');
 });
+
+const pswpElement = document.querySelectorAll('.pswp')[0];
+
+// build items array
+const items = [
+  {
+    src: 'https://res.cloudinary.com/dpra9vwkq/image/upload/v1581967729/food1_fn5nw3.png',
+    w: 600,
+    h: 400,
+  },
+  {
+    src: 'https://res.cloudinary.com/dpra9vwkq/image/upload/v1581967729/food6_mfbnjk.png',
+    w: 1200,
+    h: 900,
+  },
+  {
+    src: 'https://res.cloudinary.com/dpra9vwkq/image/upload/v1581967729/food7_jtwwkt.png',
+    w: 1200,
+    h: 900,
+  },
+];
+
+// define options (if needed)
+const options = {
+  // optionName: 'option value'
+  // for example:
+  index: 0, // start at first slide
+};
+
+// Initializes and opens PhotoSwipe
+const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+gallery.init();
