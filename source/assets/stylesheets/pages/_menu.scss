@@ -219,6 +219,11 @@
   }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) {
+  .gallery {
+    margin-top: -80px;
+  }
+}
 
 /* gallery grid */
 .gallery {
@@ -272,10 +277,4 @@
 .lb-caption,
 .lb-number {
   font-family: $body-font;
-}
-
-@media only screen and (max-device-width: 812px) and (orientation: landscape) {
-  .lb-data .lb-details {
-    display: none;
-  }
 }

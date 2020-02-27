@@ -9,7 +9,6 @@
   animation-duration: 0.5s;
   animation-fill-mode: both;
   animation-name: slideOutRight;
-
 }
 
 .back_to_top.show {
@@ -64,4 +63,19 @@
 .fa-arrow-up {
   color: $white;
   font-size: 24px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) {
+  .back_to_top {
+    bottom: 20px;
+  }
+
+  #backToTop {
+    width: 30px;
+    height: 30px;
+  }
+
+  .fa-arrow-up {
+    font-size: 16px;
+  }
 }
