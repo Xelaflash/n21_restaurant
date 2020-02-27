@@ -6,13 +6,16 @@ title: N21 Restaurant - High standard bistronomie
 <div class="main">
   <%= partial "/pages/home" %>
   <%= partial "/pages/about" %>
-  <div class="parallax" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/wine_cellar.jpg);">
+  <div class="parallax lazy"
+    data-bg="url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/wine_cellar.jpg), linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2))">
   </div>
   <%= partial "/pages/menu" %>
-  <div class="parallax" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1580992640/MEZZANIE_NIGHT_POOL_VIEW.jpg);">
+  <div class="parallax lazy"
+    data-bg="url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1580992640/MEZZANIE_NIGHT_POOL_VIEW.jpg), linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2))">
   </div>
   <%= partial "/pages/contact" %>
-  <div class="parallax" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1580992642/MEZZANInE_NIGHT.jpg);">
+  <div class="parallax lazy"
+    data-bg="url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1580992642/MEZZANInE_NIGHT.jpg), linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2))">
   </div>
   <%= partial "/pages/location_hours" %>
 </div>

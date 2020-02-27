@@ -23,16 +23,16 @@
         <div class="slides">
           <ul>
             <li>
-              <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/enomatic.jpg", alt: "N21 Restaurant - High Standard Bistronomie" %>
+              <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/enomatic.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
             </li>
             <li>
-              <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/Goat_Cheese.jpg", alt: "N21 Restaurant - High Standard Bistronomie" %>
+              <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/Goat_Cheese.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
             </li>
             <li>
-              <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/prawn_ceviche.jpg", alt: "N21 Restaurant - High Standard Bistronomie" %>
+              <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/prawn_ceviche.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
             </li>
             <li>
-              <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/Beef_Brisket.jpg", alt: "N21 Restaurant - High Standard Bistronomie" %>
+              <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/Beef_Brisket.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
             </li>
           </ul>
         </div>
@@ -44,7 +44,7 @@
       <% data.gallery.each do |owner, pic| %>
         <div class="brick">
           <a href="<%= pic.url %>" data-lightbox="picture-gallery" data-title="N21 Restaurant - Our Delicious Food">
-            <%= image_tag pic.url, alt: "N21 Restaurant - Our Delicious Food", loading:"lazy" %>
+            <%= image_tag "", data: { src:  pic.url }, alt: "N21 Restaurant - Our Delicious Food", class: "lazy" %>
           </a>
         </div>
       <% end %>
@@ -71,7 +71,7 @@
     <div class="reinsurance-container">
       <div class="reinsurance-item">
         <div class="reinsurance-icons">
-          <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/vegetables.png", alt: "N21 Restaurant - Fresh quality ingredients", class:"reinsurance-icon" %>
+          <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/vegetables.png" }, alt: "N21 Restaurant - Fresh quality ingredients", class:"reinsurance-icon lazy" %>
         </div>
         <h5>Fresh Dishes</h5>
         <hr class="small-sep" />
@@ -81,7 +81,7 @@
       </div>
       <div class="reinsurance-item">
         <div class="reinsurance-icons">
-          <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/menu.png", alt: "N21 Restaurant - Various Menu", class:"reinsurance-icon" %>
+          <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/menu.png" }, alt: "N21 Restaurant - Various Menu", class:"reinsurance-icon lazy" %>
         </div>
         <h5>Various Menu</h5>
         <hr class="small-sep" />
@@ -91,7 +91,7 @@
       </div>
       <div class="reinsurance-item">
         <div class="reinsurance-icons">
-          <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/cook.png", alt: "N21 Restaurant - Premium Service", class:"reinsurance-icon" %>
+          <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/cook.png" }, alt: "N21 Restaurant - Premium Service", class:"reinsurance-icon lazy" %>
         </div>
         <h5>Well Service</h5>
         <hr class="small-sep" />
