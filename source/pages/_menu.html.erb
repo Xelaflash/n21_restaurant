@@ -9,8 +9,12 @@
             As all begins with ingredients, we are focusing on quality ones,
             responsible sourcing and sustainability at every chance we get.
           </p>
-          <a id="menu-link" href="https://res.cloudinary.com/dpra9vwkq/image/upload/v1580391774/N21_menu.pdf"
-            target="_blank" rel="noopener noreferrer">
+          <a
+            id="menu-link"
+            href="https://res.cloudinary.com/dpra9vwkq/image/upload/v1580391774/N21_menu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             View the full menu
           </a>
         </div>
@@ -34,19 +38,35 @@
         </div>
       </div>
     </div>
-
   </div>
+  <section id="gallery-section">
+    <div class="gallery">
+      <% data.gallery.each do |owner, pic| %>
+        <div class="brick">
+          <a href="<%= pic.url %>" data-lightbox="picture-gallery" data-title="N21 Restaurant - Our Delicious Food">
+            <%= image_tag pic.url, alt: "N21 Restaurant - Our Delicious Food", loading:"lazy" %>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </section>
 </section>
 <section class="feature-list">
   <div class="icon-default icon-skeen">
-    <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1581692070/icon_cooking.png"
-      alt="N21 Restaurant - Features">
+    <img
+      src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1581692070/icon_cooking.png"
+      alt="N21 Restaurant - Features"
+    />
   </div>
   <div class="container">
     <div class="build-title">
       <h2 class="page-title">Good food... Good feelings</h2>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique explicabo nihil placeat nobis. <br>
-        voluptatum exercitationem amet corrupti, est mollitia veritatis nisi temporibus harum commodi dolorum.</h6>
+      <h6>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+        similique explicabo nihil placeat nobis. <br />
+        voluptatum exercitationem amet corrupti, est mollitia veritatis nisi
+        temporibus harum commodi dolorum.
+      </h6>
     </div>
     <div class="reinsurance-container">
       <div class="reinsurance-item">
@@ -54,24 +74,30 @@
           <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/vegetables.png", alt: "N21 Restaurant - Fresh quality ingredients", class:"reinsurance-icon" %>
         </div>
         <h5>Fresh Dishes</h5>
-        <hr class="small-sep">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-</p>
+        <hr class="small-sep" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-
+        </p>
       </div>
       <div class="reinsurance-item">
         <div class="reinsurance-icons">
           <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/menu.png", alt: "N21 Restaurant - Various Menu", class:"reinsurance-icon" %>
         </div>
         <h5>Various Menu</h5>
-        <hr class="small-sep">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-</p>
+        <hr class="small-sep" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-
+        </p>
       </div>
       <div class="reinsurance-item">
         <div class="reinsurance-icons">
           <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1581695981/cook.png", alt: "N21 Restaurant - Premium Service", class:"reinsurance-icon" %>
         </div>
         <h5>Well Service</h5>
-        <hr class="small-sep">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-</p>
+        <hr class="small-sep" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-
+        </p>
       </div>
     </div>
   </div>

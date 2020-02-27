@@ -11,6 +11,7 @@ import { checkScroll } from './components/nav_scroll';
 import { checkScrollToTop } from './components/back_to_top';
 
 import { initMapbox } from './plugins/mapbox';
+import './plugins/lightbox';
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
@@ -59,3 +60,5 @@ const logoAnim = document.querySelector('.logo-wrapper');
 document.addEventListener('DOMContentLoaded', () => {
   logoAnim.classList.add('zoomIn');
 });
+
+// Lightbox
