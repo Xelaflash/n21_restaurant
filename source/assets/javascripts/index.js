@@ -1,6 +1,8 @@
 // plugins import
 import '@babel/polyfill';
 import './plugins/intl_tel';
+import './plugins/lightbox';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 // components JS files
@@ -11,7 +13,7 @@ import { checkScroll } from './components/nav_scroll';
 import { checkScrollToTop } from './components/back_to_top';
 
 import { initMapbox } from './plugins/mapbox';
-import './plugins/lightbox';
+import { lazyLoadInstance } from './plugins/lazyLoad';
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
@@ -60,3 +62,6 @@ const logoAnim = document.querySelector('.logo-wrapper');
 document.addEventListener('DOMContentLoaded', () => {
   logoAnim.classList.add('visible');
 });
+
+// LazyLoad
+lazyLoadInstance();
