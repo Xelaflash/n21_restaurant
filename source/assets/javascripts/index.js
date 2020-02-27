@@ -58,7 +58,5 @@ window.addEventListener('resize', mainMarginBottom);
 // Animation on Logo
 const logoAnim = document.querySelector('.logo-wrapper');
 document.addEventListener('DOMContentLoaded', () => {
-  logoAnim.classList.add('zoomIn');
+  logoAnim.classList.add('visible');
 });
-
-// Lightbox
