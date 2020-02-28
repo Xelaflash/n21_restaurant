@@ -171,6 +171,62 @@
   opacity: 0.8;
 }
 
+/* gallery grid */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  margin-top: 20px;
+}
+
+/* Masonry item */
+.gallery .brick {
+  margin: 10px;
+}
+
+/* Masonry image effects */
+.gallery .brick img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden;
+  /* Remove Image flickering on hover */
+  border-radius: 2px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.gallery .brick:hover img {
+  opacity: .75;
+}
+
+// lightbox centering for mobile + overlay color + remove caption on landscape
+.lightboxOverlay {
+  background-color: $black;
+  opacity: 0.9;
+}
+
+#lightboxOverlay {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+#lightbox {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.lb-caption,
+.lb-number {
+  font-family: $body-font;
+}
+
+// star reinsurance item
 .feature-list {
   position: relative;
   margin: 20px auto 50px;
@@ -285,59 +341,4 @@
   .gallery {
     margin-top: -80px;
   }
-}
-
-/* gallery grid */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 80px;
-  margin-top: 20px;
-}
-
-/* Masonry item */
-.gallery .brick {
-  margin: 10px;
-}
-
-/* Masonry image effects */
-.gallery .brick img {
-  transition: all .5s ease-in-out;
-  backface-visibility: hidden;
-  /* Remove Image flickering on hover */
-  border-radius: 2px;
-  width: 200px;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-}
-
-.gallery .brick:hover img {
-  opacity: .75;
-}
-
-// lightbox centering for mobile + overlay color + remove caption on landscape
-.lightboxOverlay {
-  background-color: $black;
-  opacity: 0.9;
-}
-
-#lightboxOverlay {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  height: 100% !important;
-  width: 100% !important;
-}
-
-#lightbox {
-  position: fixed !important;
-  top: 50% !important;
-  transform: translateY(-50%);
-}
-
-.lb-caption,
-.lb-number {
-  font-family: $body-font;
 }
