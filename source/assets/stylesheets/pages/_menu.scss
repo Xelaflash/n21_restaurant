@@ -8,32 +8,91 @@
 }
 
 /* fade slider */
-.slides {
+#slide-container {
   position: relative;
-  min-height: 367px;
+  max-width: 650px;
 }
 
-.slides ul {
-  list-style: none;
-  position: relative;
-  margin: 0;
+/* First element to be in block mode for responsiveness */
+#slide-element-1 {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* keyframes #anim_slides */
-@keyframes anim_slides {
+/* Other element to be in absolute position */
+#slide-element-2,
+#slide-element-3,
+#slide-element-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.slide-image {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Animation settings for individual elements */
+#slide-element-1 {
+  animation: fade-1 20s infinite;
+}
+
+#slide-element-2 {
+  animation: fade-2 20s infinite;
+}
+
+#slide-element-3 {
+  animation: fade-3 20s infinite;
+}
+
+#slide-element-4 {
+  animation: fade-4 20s infinite;
+}
+
+// /* and more if there are more slides to show */
+@keyframes fade-1 {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-2 {
   0% {
     opacity: 0;
   }
 
-  6% {
+  25% {
     opacity: 1;
   }
 
-  24% {
-    opacity: 1;
+  50% {
+    opacity: 0;
   }
 
-  30% {
+  75% {
     opacity: 0;
   }
 
@@ -42,34 +101,48 @@
   }
 }
 
-.slides ul li {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  animation: 20s linear infinite anim_slides;
+@keyframes fade-3 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-/* css3 delays */
-.slides ul li:nth-child(2),
-.slides ul li:nth-child(2) div {
-  animation-delay: 5s;
-}
+@keyframes fade-4 {
+  0% {
+    opacity: 0;
+  }
 
-.slides ul li:nth-child(3),
-.slides ul li:nth-child(3) div {
-  animation-delay: 10s;
-}
+  25% {
+    opacity: 0;
+  }
 
-.slides ul li:nth-child(4),
-.slides ul li:nth-child(4) div {
-  animation-delay: 15s;
-}
+  50% {
+    opacity: 0;
+  }
 
-.slides ul li img {
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, .6);
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 /* END */
@@ -201,18 +274,6 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  .slides {
-    width: 550px;
-  }
-}
-
-@media (min-width: 1201px) {
-  .slides {
-    width: 650px;
-  }
-}
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .menu-section-flex-container {
     padding-bottom: 0;
@@ -232,6 +293,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 80px;
+  margin-top: 20px;
 }
 
 /* Masonry item */

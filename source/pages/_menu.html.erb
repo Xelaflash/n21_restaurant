@@ -9,54 +9,54 @@
             As all begins with ingredients, we are focusing on quality ones,
             responsible sourcing and sustainability at every chance we get.
           </p>
-          <a
-            id="menu-link"
-            href="https://res.cloudinary.com/dpra9vwkq/image/upload/v1580391774/N21_menu.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a id="menu-link" href="https://res.cloudinary.com/dpra9vwkq/image/upload/v1580391774/N21_menu.pdf"
+            target="_blank" rel="noopener noreferrer">
             View the full menu
           </a>
         </div>
       </div>
       <div class="carousel-container">
-        <div class="slides">
-          <ul>
-            <li>
-              <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/enomatic.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
-            </li>
-            <li>
-              <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/Goat_Cheese.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
-            </li>
-            <li>
-              <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/prawn_ceviche.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
-            </li>
-            <li>
-              <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/Beef_Brisket.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
-            </li>
-          </ul>
+
+
+        <div id="slide-container">
+          <div id="slide-element-1">
+            <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/enomatic.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "slide-image lazy" %>
+          </div>
+          <div id="slide-element-2">
+            <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/Goat_Cheese.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "slide-image lazy" %>
+          </div>
+          <div id="slide-element-3">
+            <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/prawn_ceviche.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "slide-image lazy" %>
+          </div>
+          <div id="slide-element-4">
+            <%= image_tag "", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580218284/Beef_Brisket.jpg" }, alt: "N21 Restaurant - High Standard Bistronomie", class: "slide-image lazy" %>
+          </div>
         </div>
+
+
+
+
+
+
       </div>
     </div>
   </div>
   <section id="gallery-section">
     <div class="gallery">
       <% data.gallery.each do |owner, pic| %>
-        <div class="brick">
-          <a href="<%= pic.url %>" data-lightbox="picture-gallery" data-title="N21 Restaurant - Our Delicious Food">
-            <%= image_tag "", data: { src:  pic.url }, alt: "N21 Restaurant - Our Delicious Food", class: "lazy" %>
-          </a>
-        </div>
+      <div class="brick">
+        <a href="<%= pic.url %>" data-lightbox="picture-gallery" data-title="N21 Restaurant - Our Delicious Food">
+          <%= image_tag "", data: { src:  pic.url }, alt: "N21 Restaurant - Our Delicious Food", class: "lazy" %>
+        </a>
+      </div>
       <% end %>
     </div>
   </section>
 </section>
 <section class="feature-list">
   <div class="icon-default icon-skeen">
-    <img
-      src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1581692070/icon_cooking.png"
-      alt="N21 Restaurant - Features"
-    />
+    <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1581692070/icon_cooking.png"
+      alt="N21 Restaurant - Features" />
   </div>
   <div class="container">
     <div class="build-title">
