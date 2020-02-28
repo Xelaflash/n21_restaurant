@@ -62,6 +62,3 @@ const logoAnim = document.querySelector('.logo-wrapper');
 document.addEventListener('DOMContentLoaded', () => {
   logoAnim.classList.add('visible');
 });
-
-// LazyLoad
-lazyLoadInstance();
