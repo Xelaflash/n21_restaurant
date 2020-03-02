@@ -10,7 +10,6 @@
       <ul class="nav-list">
         <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link" %></li>
         <li class="navbar-item"><%= link_to "Menu", "#menu-section", class:"navbar-link" %></li>
-        <!-- <li class="navbar-item"><%#= link_to "Private events", "#private_events-section", class:"navbar-link" %></li> -->
         <li class="navbar-item"><%= link_to "Contact", "#contact-section", class:"navbar-link" %></li>
       </ul>
     </div>
@@ -26,20 +25,18 @@
     <!-- Burger menu for small screens -->
     <div class="mobile_nav hidden-md-up">
       <div class="hamburger-logo-wrapper">
-        <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579354123/N-white.png", alt: "N21 Restaurant", class: "sliding-img-left front-position sidenav-trigger", id:"n-img" %>
+        <%= image_tag "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAtCAYAAAAEP43UAAAAVUlEQVR42u3QQQEAQAQAsBPkHsJqJxQRBNgiLOpnP85CmDBhwoQJQ5gwYcKEIUyYMGHChCFMmDBhwhAmTJgwYcIQJkyYMGEIEyZMmDBhCBMmTJgw1gCePUZRzOz5XgAAAABJRU5ErkJggg==", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579354123/N-white.png" }, alt: "N21 Restaurant", class: "sliding-img-left front-position sidenav-trigger lazy", id:"n-img" %>
         <button class="hamburger sidenav-trigger front-position" type="button" aria-label="Menu">
         </button>
-        <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579354322/21-white.png", alt: "N21 Restaurant", class: "sliding-img-right front-position sidenav-trigger", id:"21-img" %>
+        <%= image_tag "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAtCAYAAAD/aHgLAAAASElEQVR42u3PQREAMAgAoBlkD8PazlDm8IQGRP3sd0CIioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioquNqFsRlGbs0ImAAAAAElFTkSuQmCC", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1579354322/21-white.png" }, alt: "N21 Restaurant", class: "sliding-img-right front-position sidenav-trigger lazy", id:"21-img" %>
       </div>
       <div class="sidenav">
         <% link_to "#home-section" do %>
-        <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580313220/high_standard_bistronomie_round.png", alt: "N21 Restaurant - Logo", class:"sidenav-link", id:"logo-sideNav" %>
+        <%= image_tag "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABLCAYAAADakmGTAAAAeUlEQVR42u3QIQEAMAgAsBPkgrC0IxQVcJgtwqJ+9mMthAkTJkyYMIQJEyZMGMKECRMmTBjChAkTJgxhwoQJEyYMYcKECROGMGHChAkThjBhwoQJQ5gwYcKECUOYMGHChCFMmDBhwoQhTJgwYcIQJkyYMGHCECbs0ADHTHUxGqmzwgAAAABJRU5ErkJggg==", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1580313220/high_standard_bistronomie_round.png" }, alt: "N21 Restaurant - Logo", class:"sidenav-link lazy", id:"logo-sideNav" %>
         <% end %>
         <ul>
           <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link sidenav-link" %></li>
           <li class="navbar-item"><%= link_to "Menu", "#menu-section", class:"navbar-link sidenav-link" %></li>
-          <!-- <li class="navbar-item">
-            <%#= link_to "Private events", "#private_events-section", class:"navbar-link sidenav-link" %></li> -->
           <li class="navbar-item"><%= link_to "Contact", "#contact-section", class:"navbar-link sidenav-link" %></li>
         </ul>
         <div class="social-wrapper-sidenav">
