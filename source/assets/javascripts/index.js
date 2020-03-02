@@ -1,5 +1,5 @@
 // plugins import
-import '@babel/polyfill';
+// import '@babel/polyfill';
 import './plugins/intl_tel';
 import './plugins/lightbox';
 
