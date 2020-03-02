@@ -184,8 +184,9 @@ textarea.input1+.shadow-input1 {
 }
 
 .alert-validate::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   content: "\f06a";
-  font-family: FontAwesome;
   display: block;
   position: absolute;
   color: $red;
