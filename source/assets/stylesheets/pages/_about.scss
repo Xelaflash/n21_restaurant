@@ -74,6 +74,7 @@
 
   .about-pic {
     width: 80%;
+    height: auto;
   }
 
   #pic-menu {
@@ -87,9 +88,10 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .about-pic {
     width: 80%;
+    height: auto;
     margin: 15px 0;
   }
 
@@ -128,6 +130,6 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
   #pic-table {
-    top: 250px;
+    top: 200px;
   }
 }
