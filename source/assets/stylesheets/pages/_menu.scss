@@ -10,7 +10,14 @@
 /* fade slider */
 #slide-container {
   position: relative;
-  max-width: 650px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  #slide-container {
+    max-width: 650px;
+  }
 }
 
 /* First element to be in block mode for responsiveness */
@@ -154,9 +161,9 @@
   line-height: 1.8em;
 }
 
-.food-text-wrapper {
-  margin-top: 25px;
-}
+// .food-text-wrapper {
+//   margin-top: 25px;
+// }
 
 #menu-link {
   text-transform: uppercase;
@@ -331,14 +338,10 @@
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  .menu-section-flex-container {
-    padding-bottom: 0;
-  }
-}
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) {
-  .gallery {
-    margin-top: -80px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .gallery .brick img {
+    width: 150px;
+    height: 150px;
   }
 }
