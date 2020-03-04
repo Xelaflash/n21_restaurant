@@ -19,7 +19,7 @@ const initMapbox = () => {
 
     // create the popup
     const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
-    <img class="popup-logo" src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1579271875/Logo.png" alt="N21 Restaurant - Logo"> <br>
+    <img class="popup-logo" src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1583332336/logo_small.png" alt="N21 Restaurant - Logo"> <br>
     <h5>N21 Restaurant</h5>`);
 
     // create DOM element for the marker
