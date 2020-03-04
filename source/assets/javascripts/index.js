@@ -13,7 +13,7 @@ import { checkScroll } from './components/nav_scroll';
 import { checkScrollToTop } from './components/back_to_top';
 
 import { initMapbox } from './plugins/mapbox';
-import { lazyLoadInstance } from './plugins/lazyLoad';
+import './plugins/lazyLoad';
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);

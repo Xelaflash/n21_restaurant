@@ -10,7 +10,7 @@ const initMapbox = () => {
 
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/dark-v10',
+      style: 'mapbox://styles/mapbox/dark-v10?optimize=true',
       center: [106.690461, 10.780869], // starting position
       zoom: 16, // starting zoom
       pitch: 60,
@@ -55,6 +55,7 @@ const initMapbox = () => {
           filter: ['==', 'extrude', 'true'],
           type: 'fill-extrusion',
           minzoom: 15,
+          maxzoom: 17,
           paint: {
             'fill-extrusion-color': '#aaa',
             // use an 'interpolate' expression to add a smooth transition effect to the
