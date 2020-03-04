@@ -1,5 +1,4 @@
 // plugins import
-// import '@babel/polyfill';
 import './plugins/intl_tel';
 import './plugins/lightbox';
 
@@ -12,6 +11,8 @@ import { checkScrollToTop } from './components/back_to_top';
 
 import { initMapbox } from './plugins/mapbox';
 import './plugins/lazyLoad';
+
+console.log('it works');
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);

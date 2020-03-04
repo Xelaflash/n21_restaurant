@@ -26,6 +26,7 @@
   <%= yield %>
   <%= partial "layouts/shared/footer" %>
   <%= partial "layouts/shared/back_to_top" %>
+  <%= javascript_include_tag "vendor", defer: 'defer' %>
   <%= javascript_include_tag "bundle" %>
 </body>
 
