@@ -3,8 +3,6 @@
 import './plugins/intl_tel';
 import './plugins/lightbox';
 
-import 'mapbox-gl/dist/mapbox-gl.css';
-
 // components JS files
 import './components/contact';
 import { toggleNav, toggleImg } from './components/mobile_nav';
