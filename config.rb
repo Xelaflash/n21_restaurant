@@ -30,6 +30,7 @@ configure :development do
 end
 
 configure :build do
+  activate :gzip
   activate :minify_css
   # ------ We commented this command as it prevented us to deploy our Middleman project on GitHub Pages ------
   # activate :minify_javascript
