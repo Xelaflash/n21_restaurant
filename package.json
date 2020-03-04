@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "glob": "^7.1.6",
-    "intl-tel-input": "^16.0.8",
+    "intl-tel-input": "^16.0.11",
     "lightbox2": "^2.11.1",
     "mapbox-gl": "^1.7.0",
     "vanilla-lazyload": "^12.5.1"

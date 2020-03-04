@@ -1,7 +1,7 @@
 import intlTelInput from 'intl-tel-input';
 
 // tel input init
-const input = document.querySelector('#phone');
+const input = document.querySelector('#form-phone');
 const errorMsg = document.querySelector('#error-msg');
 const validMsg = document.querySelector('#valid-msg');
 
@@ -10,7 +10,7 @@ const errorMap = ['Invalid number', 'Invalid country code', 'Too short', 'Too lo
 
 // initialise plugin
 const phoneNumber = intlTelInput(input, {
-  utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/utils.js',
+  utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.11/js/utils.js',
   separateDialCode: true,
   hiddenInput: 'phone',
   formatOnDisplay: true,
