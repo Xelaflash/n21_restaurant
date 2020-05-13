@@ -22,6 +22,8 @@ activate :external_pipeline,
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/404.html', layout: 'error_pages'
+page '/500.html', layout: 'error_pages'
 
 configure :development do
   set      :debug_assets, true
