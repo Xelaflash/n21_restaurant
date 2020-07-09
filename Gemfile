@@ -9,8 +9,3 @@ gem 'middleman-minify-html'
 gem 'middleman-pry'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'middleman-favicon-maker'
-
-# Fix critical github warning
-gem 'actionview', '>= 5.0.7.2'
-
-# Assets
