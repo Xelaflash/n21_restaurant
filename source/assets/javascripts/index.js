@@ -12,8 +12,6 @@ import { checkScrollToTop } from './components/back_to_top';
 import { initMapbox } from './plugins/mapbox';
 import './plugins/lazyLoad';
 
-console.log('it works');
-
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
 

@@ -178,6 +178,37 @@
   opacity: 0.8;
 }
 
+.order_booking {
+  margin: 50px auto 80px auto;
+}
+
+.cta-buttons {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.order-btn {
+  cursor: pointer;
+  display: inline-block;
+  background: $red;
+  text-transform: uppercase;
+  border-radius:5px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  color: $white;
+  padding: 25px 60px;
+  text-decoration: none;
+  margin: 0.625rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  background: linear-gradient(#70181c, $red);
+  transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+  background: linear-gradient(#9a2226, $red);
+}
+
 /* gallery grid */
 .gallery {
   display: flex;
