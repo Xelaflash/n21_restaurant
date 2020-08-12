@@ -159,7 +159,7 @@ h1 {
 }
 
 /* Breakpoint SM */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 860px) {
 
   .hidden-sm-down,
   .hidden-md-down,
@@ -176,7 +176,7 @@ h1 {
 }
 
 /* Breakpoint MD */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 860px) and (max-width: 991px) {
 
   .hidden-md-down,
   .hidden-lg-down,

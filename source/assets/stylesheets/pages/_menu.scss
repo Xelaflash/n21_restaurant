@@ -203,6 +203,7 @@
   box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
   background: linear-gradient(#70181c, $red);
   transition: background 0.3s ease;
+  width: 358px;
 }
 
 .order-btn:hover {
@@ -374,5 +375,8 @@
   .gallery .brick img {
     width: 150px;
     height: 150px;
+  }
+  .order-btn {
+    width: 300px;
   }
 }
