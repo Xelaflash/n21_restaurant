@@ -105,7 +105,7 @@
 
 .nav-icon {
   color: $white;
-  font-size: 32px;
+  font-size: 28px;
   margin: 0 10px;
   padding-bottom: 0;
 }
@@ -175,7 +175,7 @@
 }
 
 .sidenav-content {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .cta-wrapper-sidenav {
@@ -221,9 +221,8 @@
 .social-links-sidenav a {
   color: $white;
   cursor: pointer;
-  font-size: 46px;
+  font-size: 36px;
   padding: 0px 20px;
-
   &:hover {
     color: $cream;
   }
