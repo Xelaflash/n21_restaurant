@@ -298,49 +298,49 @@
   }
 }
 
-.reinsurance-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+// .reinsurance-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+// }
 
-.reinsurance-icons {
-  text-align: center;
-  margin: 20px auto;
-}
+// .reinsurance-icons {
+//   text-align: center;
+//   margin: 20px auto;
+// }
 
-.reinsurance-icon {
-  height: 80px;
-  width: auto;
-}
+// .reinsurance-icon {
+//   height: 80px;
+//   width: auto;
+// }
 
-.reinsurance-item {
-  h5 {
-    font-family: $headers-font;
-    text-align: center;
-    font-size: 24px;
-    letter-spacing: 5px;
-    margin: 15px auto;
-  }
+// .reinsurance-item {
+//   h5 {
+//     font-family: $headers-font;
+//     text-align: center;
+//     font-size: 24px;
+//     letter-spacing: 5px;
+//     margin: 15px auto;
+//   }
 
-  p {
-    margin: 25px auto;
-    width: 90%;
-    color: $gray;
-    font-weight: 400;
-    font-size: 15px;
-    text-align: center;
-    line-height: 1.6em;
-  }
-}
+//   p {
+//     margin: 25px auto;
+//     width: 90%;
+//     color: $gray;
+//     font-weight: 400;
+//     font-size: 15px;
+//     text-align: center;
+//     line-height: 1.6em;
+//   }
+// }
 
-.small-sep {
-  background: $red;
-  height: 4px;
-  border-radius: 50px;
-  width: 20%;
-  margin: auto;
-}
+// .small-sep {
+//   background: $red;
+//   height: 4px;
+//   border-radius: 50px;
+//   width: 20%;
+//   margin: auto;
+// }
 
 
 @media (max-width: 992px) {
@@ -355,9 +355,9 @@
     padding-bottom: 0;
   }
 
-  .reinsurance-container {
-    flex-wrap: wrap;
-  }
+  // .reinsurance-container {
+  //   flex-wrap: wrap;
+  // }
 
 }
 

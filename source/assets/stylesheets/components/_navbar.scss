@@ -128,18 +128,22 @@
 }
 
 .sidenav {
-  height: 100%;
+  height:0;
   padding: 0 30px;
-  width: 0;
+  width: 100%;
   position: fixed;
   opacity: 0;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: $red;
+  background-color: #878787;
+  background-image: url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1598455261/menu_wine_N21-pix_copy_kg8bi8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow: auto;
   white-space: nowrap;
-  transition: all 0.5s;
+  transition: all 0.6s ease-out;
 
 
   ul {
@@ -154,20 +158,17 @@
   }
 }
 
-.show-sidenav {
-  width: 100%;
-  opacity: 1;
 
-  #logo-sideNav {
-    opacity: 1;
-  }
+.show-sidenav {
+  height: 100%;
+  opacity: 1;
 }
 
 .sidenav a {
   text-decoration: none;
   font-size: 26px;
   font-family: $headers-font;
-  color: $white;
+  color: $black;
 }
 
 .sidenav a:hover {
@@ -187,13 +188,13 @@
 }
 
 .btn-ghost-sidenav {
-  color: $white;
-  border: 1px solid $white;
+  color: $black;
+  border: 2px solid $black;
   padding: 15px 25px 10px;
   border-radius: 50px;
   font-weight: lighter;
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
+  opacity: 0.8;
+  transition: all 0.3s;
   cursor: pointer;
   font-family: $headers-font;
   letter-spacing: 2px;
@@ -205,6 +206,9 @@
 
 .btn-ghost-sidenav:hover {
   opacity: 1;
+  color: $cream;
+  border-color: $cream;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
 }
 
 .social-wrapper-sidenav {
@@ -219,10 +223,11 @@
 }
 
 .social-links-sidenav a {
-  color: $white;
+  color: $black;
   cursor: pointer;
   font-size: 36px;
   padding: 0px 20px;
+  transition: all 0.5s;
   &:hover {
     color: $cream;
   }
@@ -255,7 +260,7 @@
   height: 45px;
   width: auto;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.4s linear;
   position: absolute;
   overflow: hidden;
 }
