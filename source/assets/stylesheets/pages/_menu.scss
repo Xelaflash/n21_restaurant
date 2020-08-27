@@ -161,10 +161,6 @@
   line-height: 1.8em;
 }
 
-// .food-text-wrapper {
-//   margin-top: 25px;
-// }
-
 #menu-link {
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -212,17 +208,15 @@
 
 /* gallery grid */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 80px;
   margin-top: 20px;
+  padding-bottom: 80px;
+  transition: all .5s ease-in-out;
 }
 
 /* Masonry item */
 .gallery .brick {
-  margin: 10px;
+  margin: 5px 2px;
+  vertical-align:top;
 }
 
 /* Masonry image effects */
@@ -231,8 +225,8 @@
   backface-visibility: hidden;
   /* Remove Image flickering on hover */
   border-radius: 2px;
-  width: 200px;
-  height: 200px;
+  display: block;
+  max-width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -298,50 +292,6 @@
   }
 }
 
-// .reinsurance-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
-// }
-
-// .reinsurance-icons {
-//   text-align: center;
-//   margin: 20px auto;
-// }
-
-// .reinsurance-icon {
-//   height: 80px;
-//   width: auto;
-// }
-
-// .reinsurance-item {
-//   h5 {
-//     font-family: $headers-font;
-//     text-align: center;
-//     font-size: 24px;
-//     letter-spacing: 5px;
-//     margin: 15px auto;
-//   }
-
-//   p {
-//     margin: 25px auto;
-//     width: 90%;
-//     color: $gray;
-//     font-weight: 400;
-//     font-size: 15px;
-//     text-align: center;
-//     line-height: 1.6em;
-//   }
-// }
-
-// .small-sep {
-//   background: $red;
-//   height: 4px;
-//   border-radius: 50px;
-//   width: 20%;
-//   margin: auto;
-// }
-
 
 @media (max-width: 992px) {
   .menu-text-container {
@@ -354,11 +304,6 @@
     margin: 0 auto;
     padding-bottom: 0;
   }
-
-  // .reinsurance-container {
-  //   flex-wrap: wrap;
-  // }
-
 }
 
 @media (min-width: 992px) {
@@ -372,11 +317,27 @@
 
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-  .gallery .brick img {
-    width: 150px;
-    height: 150px;
-  }
   .order-btn {
     width: 300px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+  .gallery {
+    column-count: 4;
   }
 }
