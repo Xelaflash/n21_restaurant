@@ -59,3 +59,11 @@ const logoAnim = document.querySelector('.logo-wrapper');
 document.addEventListener('DOMContentLoaded', () => {
   logoAnim.classList.add('visible');
 });
+
+// remove box shadow cause of safari bug
+if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
+  const imgs = document.querySelectorAll('.gallery-img');
+  imgs.forEach(img => {
+    img.style.boxShadow = 'none';
+  });
+}
