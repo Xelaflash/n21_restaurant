@@ -3,15 +3,15 @@
 }
 
 .menu-section-flex-container {
-  margin: 100px auto 0;
-  padding-bottom: 50px;
+  margin: 50px auto 0;
+  // padding-bottom: 50px;
 }
 
 /* fade slider */
 #slide-container {
   position: relative;
   max-width: 550px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 
 @media (min-width: 1200px) {
@@ -152,13 +152,16 @@
     opacity: 0;
   }
 }
-
 /* END */
 
 .menu-text-container {
-  width: 35%;
-  text-align: center;
-  line-height: 1.8em;
+  width: 90%;
+  line-height: 1.9em;
+  margin: auto;
+}
+
+.menu-link-wrapper {
+  text-align:center;
 }
 
 #menu-link {
@@ -168,6 +171,7 @@
   font-size: 20px;
   color: $black;
   text-align: center;
+  margin:auto;
 }
 
 #menu-link:hover {
@@ -280,41 +284,46 @@
   background: url('https://res.cloudinary.com/dpra9vwkq/image/upload/v1583333772/pattern-skeen.png') no-repeat center center;
 }
 
-.build-title {
+.events-wrapper{
   padding-top: 20px;
+}
+
+.events-text {
+  max-width: 70%;
+  text-align: justify;
+  margin: 40px auto;
 
   p {
-    color: $gray;
-    font-weight: 400;
-    font-size: 15px;
-    text-align: center;
-    line-height: 1.6em;
+    line-height: 1.7em;
+  }
+}
+
+#events-link {
+  color: $black;
+  text-decoration: underline;
+  font-weight: bold;
+  &:hover {
+    color: $red;
   }
 }
 
 
 @media (max-width: 992px) {
   .menu-text-container {
-    width: 80%;
-    text-align: center;
     margin: 40px auto;
+    p {
+      margin-bottom: 40px;
+    }
   }
 
   .menu-section-flex-container {
-    margin: 0 auto;
+    margin: 40px auto;
     padding-bottom: 0;
   }
-}
-
-@media (min-width: 992px) {
-  .menu-section-flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+  .events-text {
+    max-width: 90%;
   }
 }
-
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
   .order-btn {
