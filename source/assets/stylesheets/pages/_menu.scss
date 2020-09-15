@@ -1,11 +1,9 @@
 #menu-section {
-  // background: $cream;
-  background-image: url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1600169601/texttures-bg-mobile-720x1280.png);
+  background: $cream;
 }
 
 .menu-section-flex-container {
   margin: 50px auto 0;
-  // padding-bottom: 50px;
 }
 
 /* fade slider */
@@ -209,6 +207,11 @@
 
 .order-btn:hover {
   background: linear-gradient(#9a2226, $red);
+}
+
+#gallery-section {
+  background-image: url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1600169601/texttures-bg-mobile-720x1280.png);
+  padding: 40px 0;
 }
 
 /* gallery grid */
