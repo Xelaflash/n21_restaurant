@@ -1,5 +1,6 @@
 .footer {
-  background: $red;
+  // background: $red;
+  background-image: url(https://res.cloudinary.com/dpra9vwkq/image/upload/v1600169601/texttures-bg-mobile-720x1280.png);
   color: $white;
   position: fixed;
   bottom: 0;
@@ -43,7 +44,7 @@
 }
 
 #colophon {
-  background: #952125;
+  // background: #952125;
   color: $white;
   padding: 20px 0;
   margin: 0 auto;
