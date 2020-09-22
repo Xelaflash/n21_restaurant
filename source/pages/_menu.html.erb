@@ -66,6 +66,32 @@
         .</p>
         <p>Please do not hesitate to <%= link_to 'Contact Us', "#contact-section", id: "events-link"%> for any request.</p>
       </div>
+
+
+      <div id="quad">
+        <figure>
+        <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/crowd.jpg" alt="N21 Restaurant - Events">
+        <figcaption>N21 restaurant - Events</figcaption>
+        </figure>
+        <figure>
+          <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Food_details.jpg" alt="N21 Restaurant - Events">
+          <figcaption>N21 restaurant - Events</figcaption>
+        </figure>
+        <figure>
+          <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1600779599/plate_events.jpg" alt="N21 Restaurant - Events">
+          <figcaption>N21 restaurant - Events</figcaption>
+        </figure>
+        <figure>
+          <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1600175534/glasses.jpg" alt="N21 Restaurant - Events">
+          <figcaption>N21 restaurant - Events</figcaption>
+        </figure>
+      </div>
+
     </div>
   </div>
 </section>
+
+<script>var quadimages = document.querySelectorAll("#quad figure");
+for(i=0; i<quadimages.length; i++) {
+  quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") });
+}</script>
