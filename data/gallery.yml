@@ -2,14 +2,22 @@ pic1:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Black_Angus_uncooked.jpg"
 pic2:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Deluxe_Croque_Mr.jpg"
+pic36:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600949951/Pool_Ppl.jpg"
 pic3:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240066/dish.jpg"
 pic4:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240069/Slow_roast_breaded_lamb.jpg"
+pic38:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600949952/crowd_3.jpg"
 pic5:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/enomatic_2.jpg"
 pic6:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240069/Starters_event.jpg"
+pic12:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948031/terasse.jpg"
+pic37:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600949951/friends.jpg"
 pic7:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600175534/glasses.jpg"
 pic8:
@@ -20,21 +28,56 @@ pic10:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/Roast_king_mackerel.jpg"
 pic11:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/pool_day_2.jpg"
-pic12:
-  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/plating_bis_brule%CC%81e.jpg"
+pic33:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600779599/plate_events.jpg"
 pic13:
-  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Food_details.jpg"
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/fish.jpg"
+pic29:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948033/pool_girl.jpg"
 pic14:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Dessert_Cheese_Event.jpg"
 pic15:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/desert.jpg"
 pic16:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Chicken_Terrine.jpg"
-pic17:
-  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/meat.jpg"
+pic26:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/Shots_friends.jpg"
 pic18:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Dessert_event.jpg"
+pic17:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/meat.jpg"
+pic34:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600947464/plating_Bis_brule%CC%81e_events.jpg"
 pic19:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600175965/dish_bleu_pink.jpg"
 pic20:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/plate.jpg"
+pic21:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600947140/black_angus.jpg"
+pic22:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/prawn_ceviche_pool.jpg"
+pic23:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/treacle_tart.jpg"
+pic24:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/wines.jpg"
+pic25:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/ROAST_CIDER.jpg"
+pic27:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/Tenderloin_Iberico_pork.jpg"
+pic28:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/Veggies.jpg"
+pic30:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600948032/Kid_Pool.jpg"
+pic31:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/crowd.jpg"
+pic32:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Food_details.jpg"
+pic33:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600949951/people.jpg"
+pic34:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600949951/ppl_close_2.jpg"
+pic35:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600949951/Lillet_Girls.jpg"
+
+pic39:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600949951/glass-close_up.jpg"
