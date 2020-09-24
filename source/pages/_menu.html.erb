@@ -86,6 +86,19 @@
           <figcaption>N21 restaurant - Events</figcaption>
         </figure>
       </div> %>
+      <div class="clients">
+        <h2>They did trust us for their event</h2>
+        <hr class="title-sep" />
+        <ul class="brands">
+          <% data.clients.each do |owner, client| %>
+            <li class="brands__item">
+              <%= image_tag client.url, alt: "N21 Restaurant - Events clients", class: "clients-logo lazy", loading: "lazy" %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+
     </div>
   </div>
 </section>

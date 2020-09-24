@@ -1,0 +1,22 @@
+client1:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600951665/logo_school.jpg"
+client3:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600956423/network_girls.png"
+client4:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600951666/piaggio_logo.png"
+client5:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600951666/intl_food_wine_logo.jpg"
+client6:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/c_scale,h_80/v1600951666/intervietnam_logo.png"
+client7:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600951666/vietcad_logo.png"
+client8:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/c_scale,w_300/v1600951666/school2_logo.png"
+client9:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600951666/peak_logo.png"
+client10:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600951666/french_tech_vn_logo.jpg"
+client11:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600951666/lin_logo.jpg"
+client2:
+  url: "https://res.cloudinary.com/dpra9vwkq/image/upload/c_scale,w_250/v1600953352/advantage_austria.png"
