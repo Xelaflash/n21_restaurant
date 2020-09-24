@@ -435,3 +435,16 @@
     column-count: 4;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .brands {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .brands__items {
+    margin: 15px 20px;
+  }
+  .brands__item img {
+    max-height: 100px;
+}
+}
