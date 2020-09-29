@@ -1,5 +1,5 @@
 <section id="menu-section" class="page">
-  <div class="container test">
+  <div class="container">
     <h2 class="page-title">Our Cuisine</h2>
     <hr class="title-sep" />
     <div class="menu-section-flex-container">
@@ -68,7 +68,16 @@
         .</p>
         <p>Please do not hesitate to <%= link_to 'Contact Us', "#contact-section", id: "events-link"%> for any request.</p>
       </div>
-      <%# <div id="quad">
+      <div class="gallery container">
+        <% data.event.each do |owner, pic| %>
+        <div class="brick">
+          <a href="<%= pic.url %>" data-lightbox="picture-gallery">
+            <%= image_tag "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAABiklEQVR42u3TMQ0AMAgAsOHf2kQggY8XAyggrYdGV/4HrEIQEAQEAUFAEBAEBAFBQBAQBBAEBAFBQBAQBAQBQUAQEAQEEQQEAUFAEBAEBAFBQBAQBAQBBAFBQBAQBAQBQUAQEAQEAUEAQUAQEAQEAUFAEBAEBAFBAEFAEBAEBAFBQBAQBAQBQUAQQBAQBAQBQUAQEAQEAUFAEEAQEAQEAUFAEBAEBAFBQBAQBBAEBAFBQBAQBAQBQUAQEAQEEQQEAUFAEBAEBAFBQBAQBAQBBAFBQBAQBAQBQUAQEAQEAUEEAUFAEBAEBAFBQBAQBAQBQQBBQBAQBAQBQUAQEAQEAUFAEEAQEAQEAUFAEBAEBAFBQBBAEBAEBAFBQBAQBAQBQUAQEAQQBAQBQUAQEAQEAUFAEBAEEAQEAUFAEBAEBAFBQBAQBAQBBAFBQBAQBAQBQUAQEAQEAUEEAUFAEBAEBAFBQBAQBAQBQQBBQBAQBAQBQUAQEAQEAUFAEEFAEBAEBAFBQBAQBASBiwYd2cu/6WpaZgAAAABJRU5ErkJggg==", data: { src:  pic.url }, alt: "N21 Restaurant - High Standard Bistronomie", class: "lazy" %>
+          </a>
+        </div>
+        <% end %>
+      </div>
+      <!-- <div id="quad">
         <figure>
         <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/crowd.jpg" alt="N21 Restaurant - Events" class="lazy">
         <figcaption>N21 restaurant - Events</figcaption>
@@ -85,8 +94,16 @@
           <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1600947464/plating_Bis_brule%CC%81e_events.jpg" alt="N21 Restaurant - Events"  class="lazy">
           <figcaption>N21 restaurant - Events</figcaption>
         </figure>
-      </div> %>
-      <div class="clients">
+        <figure>
+          <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1600947464/plating_Bis_brule%CC%81e_events.jpg" alt="N21 Restaurant - Events"  class="lazy">
+          <figcaption>N21 restaurant - Events</figcaption>
+        </figure>
+        <figure>
+          <img src="https://res.cloudinary.com/dpra9vwkq/image/upload/v1600947464/plating_Bis_brule%CC%81e_events.jpg" alt="N21 Restaurant - Events"  class="lazy">
+          <figcaption>N21 restaurant - Events</figcaption>
+        </figure>
+      </div> -->
+      <!-- <div class="clients">
         <h2>They did trust us for their event</h2>
         <hr class="title-sep" />
         <ul class="brands">
@@ -96,9 +113,7 @@
             </li>
           <% end %>
         </ul>
-      </div>
-
-
+      </div> -->
     </div>
   </div>
 </section>

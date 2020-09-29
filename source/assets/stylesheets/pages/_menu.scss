@@ -222,8 +222,9 @@
 
 /* Masonry item */
 .gallery .brick {
-  margin: 5px 2px;
-  vertical-align:top;
+  // margin: 5px 2px;
+  // vertical-align:top;
+  padding: 5px;
 }
 
 /* Masonry image effects */
@@ -234,6 +235,9 @@
   border-radius: 2px;
   display: block;
   max-width: 100%;
+}
+
+.gallery-img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -380,7 +384,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 75%;
+  width: 80%;
   margin: 20px auto;
 }
 
@@ -390,7 +394,7 @@
 
 .brands__item img {
     width: auto;
-    max-height: 120px;
+    max-height: 100px;
 }
 
 @media (max-width: 992px) {
