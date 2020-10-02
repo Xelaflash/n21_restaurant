@@ -8,15 +8,15 @@
     <!-- Navigation -->
     <div class="navbar-middle hidden-sm-down">
       <ul class="nav-list">
-        <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link" %></li>
-        <li class="navbar-item"><%= link_to "Food", "#menu-section", class:"navbar-link" %></li>
-        <li class="navbar-item"><%= link_to "Contact", "#contact-section", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to t('nav.about-link'), "#about-section", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to t('nav.food-link'), "#menu-section", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to t('nav.contact-link'), "#contact-section", class:"navbar-link" %></li>
       </ul>
     </div>
     <div class="navbar-right hidden-sm-down">
       <div class="cta-wrapper">
-        <button type="button" class="btn-flat" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" >Order Now</button>
-        <button  type="button" class="btn-flat reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true">Table Reservation</button>
+        <button type="button" class="btn-flat" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" ><%= t('nav.order-link')%></button>
+        <button  type="button" class="btn-flat reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true"><%= t('nav.resa-link') %></button>
         <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
       </div>
       <div class="social_links-wrapper">
@@ -40,13 +40,13 @@
       <div class="sidenav">
         <div class="sidenav-content">
           <ul>
-            <li class="navbar-item"><%= link_to "About Us", "#about-section", class:"navbar-link sidenav-link" %></li>
-            <li class="navbar-item"><%= link_to "Food", "#menu-section", class:"navbar-link sidenav-link" %></li>
-            <li class="navbar-item"><%= link_to "Contact", "#contact-section", class:"navbar-link sidenav-link" %></li>
+            <li class="navbar-item"><%= link_to t('nav.about-link'), "#about-section", class:"navbar-link sidenav-link" %></li>
+            <li class="navbar-item"><%= link_to t('nav.food-link'), "#menu-section", class:"navbar-link sidenav-link" %></li>
+            <li class="navbar-item"><%= link_to t('nav.contact-link'), "#contact-section", class:"navbar-link sidenav-link" %></li>
           </ul>
           <div class="cta-wrapper-sidenav">
-            <button type="button" class="btn-ghost-sidenav" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" >Order Now</button>
-            <button  type="button" class="btn-ghost-sidenav reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true" >Table Reservation</button>
+            <button type="button" class="btn-ghost-sidenav" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" ><%= t('nav.order-link') %></button>
+            <button  type="button" class="btn-ghost-sidenav reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true" ><%= t('nav.resa-link') %></button>
             <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
           </div>
           <div class="social-wrapper-sidenav">

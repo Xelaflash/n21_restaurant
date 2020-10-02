@@ -1,0 +1,78 @@
+en:
+  # shared
+  nav:
+    about-link: "About us"
+    food-link: "Food"
+    contact-link: "Contact"
+    order-link: "Order Now"
+    resa-link: "Table reservation"
+  footer:
+    follow: "Follow us on"
+    copyright: "© 2020 N21 Restaurant. All rights reserved"
+    credits: "Website by"
+    and: "and"
+
+  # section about
+  about-section:
+    title: "About us"
+    desc1_html: "N°21 Restaurant is set in a chic & Retro interior, with natural light in abundance, it has an almost 1960s Los Angeles feeling to its atmosphere. <br>
+      <strong>Dining with us is an Experience like no other</strong>."
+    desc2: "Serving Modern European food, with a certain local influence, our cuisine is unique while allowing the quality of the produce to shine through. We use only the finest imported and local ingredients here at N°21."
+    desc3_html: "We are nested in the middle of Ho Chi Min City District 3, less than 5 min away from the heart of booming Saigon (D1).<br>
+    N°21 possess 2 terraces, a swimming pool and a mezzanine which can be privatized for any kind of event."
+    desc4_html: "We serve all day long, from <strong>7 AM to 9:45 PM</strong> last order. <br>
+      <strong>Breakfast, Set Lunch, Sunday roast and All-Day menu</strong>."
+
+# section menu
+  menu-section:
+    title: "Our cuisine"
+    text_html: "As all begins with ingredients, we focus on quality ones, responsible sourcing and sustainability at every chance we get. <br>
+      We serve modern <strong>European Food with Asian influences</strong>, simple cuisine but elegant giving license to the product to do the talking. <br>
+      Our Executive chef <strong>Max Wiersma</strong> is a well-travelled creative chef from UK with more than 18 years of experience. <br>
+      <strong>Breakfast, Set Lunch, Sunday Roast, dinner or small dishes</strong> to share with friends alongside the pool paired with some delicious wine from our varied list… <br>
+      We got you covered at N°21."
+    menu-link: "View the full menu"
+
+#section Gallery
+  gallery-section:
+    title: "Gallery"
+
+#section Events
+  events-section:
+    title: "Events"
+    text1_html: "We host <strong>50</strong> guests for a sit down meal or  <strong>up to 100</strong> for a finger buffet event in our private mezzanine area. <br>
+    We specialise in traditional European bistro style food with Eastern influences!"
+    text2_html: "Our food is <strong>fresh, healthy</strong>  and everything you see in the pictures is <strong>homemade</strong> by our chefs on the premises!"
+    text3_html: "With a range of options, packages and prices to choose from, we could be the perfect location for you!<br>
+    <strong>Set menus, buffet menus, finger food, choice menus are all available, we are also able to create bespoke menus for special events</strong>."
+    link-start: "Please do not hesitate to"
+    link-text: "Contact Us"
+    link-end: "for any request."
+    clients: "They trust us for their events"
+
+#section contact
+  contact-section:
+    title: "Contact us"
+    name: "Name"
+    validation-name: "Name is required"
+    phone: "Phone"
+    validation-phone: "Phone number is required"
+    email: "Email"
+    validation-email: "Valid email is required: ex@abc.xyz"
+    subject: "Subject"
+    validation-subject: "Subject is required"
+    message: "Message"
+    validation-message: "Message is required"
+    send-email: "Send email"
+
+  form-validation:
+    valid: "Valid"
+
+#section location& hours
+  location_hours:
+    address-title: "Address"
+    address_html: "21 Ngô Thời Nhiệm, Phường 6, Quận 3 <br />
+      Ho Chi Minh City, Vietnam"
+    contact-title: "Contact details"
+    hours-title: "Hours"
+    hours_html: "Every day <strong>7:00 AM - 09:45 PM</strong>"

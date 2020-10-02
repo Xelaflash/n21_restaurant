@@ -2,15 +2,14 @@
   <div class="container flex-section">
     <div class="location-hour-left">
       <div class="location">
-        <h3 class="subsection-title">Location</h3>
+        <h3 class="subsection-title"><%= t('location_hours.address-title') %></h3>
         <hr class="subsection-sep" />
         <address class="details-wrapper" id="address">
-          21 Ngô Thời Nhiệm, Phường 6, Quận 3 <br />
-          Ho Chi Minh City, Vietnam
+          <%= t('location_hours.address_html') %>
         </address>
       </div>
       <div class="contact-medium">
-        <h3 class="subsection-title">Contact Details</h3>
+        <h3 class="subsection-title"><%= t('location_hours.contact-title') %></h3>
         <hr class="subsection-sep" />
         <div class="details-wrapper">
           <p>
@@ -22,10 +21,10 @@
         </div>
       </div>
       <div class="hours">
-        <h3 class="subsection-title">Hours</h3>
+        <h3 class="subsection-title"><%= t('location_hours.hours-title') %></h3>
         <hr class="subsection-sep" />
         <div class="details-wrapper">
-          <p>Every day <strong>7:00 AM - 09:45 PM</strong></p>
+          <p><%= t('location_hours.hours_html') %></p>
         </div>
       </div>
     </div>

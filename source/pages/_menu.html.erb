@@ -1,6 +1,6 @@
 <section id="menu-section" class="page">
   <div class="container">
-    <h2 class="page-title">Our Cuisine</h2>
+    <h2 class="page-title"><%= t('menu-section.title') %></h2>
     <hr class="title-sep" />
     <div class="menu-section-flex-container">
       <div id="slide-container">
@@ -18,26 +18,22 @@
         </div>
       </div>
       <div class="menu-text-container">
-        <p>As all begins with ingredients, we focus on quality ones, responsible sourcing and sustainability at every chance we get. <br>
-        We serve modern <strong>European Food with Asian influences</strong>, simple cuisine but elegant giving license to the product to do the talking. <br>
-        Our Executive chef <strong>Max Wiersma</strong> is a well-travelled creative chef from UK with more than 18 years of experience. <br>
-        <strong>Breakfast, Set Lunch, Sunday Roast, dinner or small dishes</strong> to share with friends alongside the pool paired with some delicious wine from our varied list… <br>
-        We got you covered at N°21.</p>
+        <p><%= t('menu-section.text_html') %></p>
         <div class="menu-link-wrapper">
-          <a id="menu-link" href="https://res.cloudinary.com/dpra9vwkq/image/upload/v1597238981/N21_restaurant_menu.pdf" target="_blank" rel="noopener noreferrer">View the full menu</a>
+          <a id="menu-link" href="https://res.cloudinary.com/dpra9vwkq/image/upload/v1597238981/N21_restaurant_menu.pdf" target="_blank" rel="noopener noreferrer"><%= t('menu-section.menu-link') %></a>
         </div>
       </div>
     </div>
   </div>
   <div class="order_booking container">
     <div class="cta-buttons">
-      <button type="button" class="order-btn" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" >Order Now</button>
-      <button  type="button" class="order-btn reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true" > Table Reservation</button>
+      <button type="button" class="order-btn" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" ><%= t('nav.order-link')%></button>
+      <button  type="button" class="order-btn reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true"><%= t('nav.resa-link') %></button>
       <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
     </div>
   </div>
   <section id="gallery-section">
-    <h2 class="page-title">Gallery</h2>
+    <h2 class="page-title"><%= t('gallery-section.title') %></h2>
     <hr class="title-sep" />
     <div class="gallery container">
       <% data.gallery.each do |owner, pic| %>
@@ -53,16 +49,13 @@
 <section class="event-section">
   <div class="container">
     <div class="events-wrapper">
-      <h2 class="page-title">Events</h2>
+      <h2 class="page-title"><%= t('events-section.title') %></h2>
       <hr class="title-sep" />
       <div class="events-text">
-        <p>We host <strong>50</strong> guests for a sit down meal or  <strong>up to 100</strong> for a finger buffet event in our private mezzanine area. <br>
-        We specialise in traditional European bistro style food with Eastern influences!</p>
-        <p>Our food is <strong>fresh, healthy</strong>  and everything you see in the pictures is <strong>homemade</strong> by our chefs on the premises!</p>
-        <p>With a range of options, packages and prices to choose from, we could be the perfect location for you!<br>
-        <strong>Set menus, buffet menus, finger food, choice menus are all available, we are also able to create bespoke menus for special events</strong>
-        .</p>
-        <p>Please do not hesitate to <%= link_to 'Contact Us', "#contact-section", id: "events-link"%> for any request.</p>
+        <p><%= t('events-section.text1_html') %></p>
+        <p><%= t('events-section.text2_html') %></p>
+        <p><%= t('events-section.text3_html') %></p>
+        <p><%= t('events-section.link-start') %> <%= link_to t('events-section.link-text'), "#contact-section", id: "events-link"%> <%= t('events-section.link-end') %></p>
       </div>
       <div class="gallery container">
         <% data.event.each do |owner, pic| %>
@@ -74,7 +67,7 @@
         <% end %>
       </div>
       <div class="clients">
-        <h2>They trust us for their events</h2>
+        <h2><%= t('events-section.clients') %></h2>
         <hr class="title-sep" />
         <ul class="brands">
           <% data.clients.each do |owner, client| %>

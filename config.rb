@@ -10,6 +10,9 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :i18n
+
+
 activate :external_pipeline,
   name: :webpack,
   command: build? ? 'yarn run build' : 'yarn run start',
@@ -43,7 +46,7 @@ configure :build do
   activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source')
     f.output_dir    = File.join(root, 'build')
-    f.icons =  {
+    f.icons = {
       "_favicon_template.png" =>  [
         { icon: "apple-touch-icon-180x180-precomposed.png" },
         { icon: "apple-touch-icon-152x152-precomposed.png" },

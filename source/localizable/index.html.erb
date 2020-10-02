@@ -1,6 +1,18 @@
 ---
 title: N21 Restaurant - High standard bistronomie
 ---
+<%= I18n.locale %>
+<%= current_page %>
+<h2>Index en</h2>
+<hr>
+
+<%  locales.each do | l |%>
+<% if l == I18n.locale %>
+<span><%= l.downcase  %></span>
+  <% else %>
+  <%= link_to l, (l == :en ? "/" : "/#{l}/"), locale: l, title: "Switch language to #{l.upcase}" %>
+  <% end %>
+<% end %>
 
 <!-- Each section goes on a partial under layouts/pages/ -->
 <div class="main">

@@ -1,7 +1,7 @@
 <section class="footer">
   <div class="footer-top">
     <div class="footer-links">
-      <p>Follow us on</p>
+      <p><%= t('footer.follow')%></p>
       <a href="https://www.instagram.com/n21restaurant/?hl=en" target="_blank" rel="noopener noreferrer"
         aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/N21restaurant/" target="_blank" rel="noopener noreferrer"
@@ -11,14 +11,14 @@
       <%= image_tag "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAc0lEQVR42u3QMQ0AMAgAsCFkCWZxhygE8CCgldCon/1YQowYMWLEiBEjRowYMWIQI0aMGDFixIgRI0YMYsSIESNGjBgxYsSIQYwYMWLEiBEjRowYMYgRI0aMGDFixIgRI0aMGDFixIgRI0aMGDFixCDmZgBu9G0b6vmOuwAAAABJRU5ErkJggg==", data: { src: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1583154420/Logo_white_noBg.png" }, alt: "N21 Restaurant - Logo", class:"logo-footer lazy" %>
     </div>
     <div id="copyright">
-      <p>© 2020 N21 Restaurant. All rights reserved</p>
+      <p><%= t('footer.copyright')%></p>
     </div>
   </div>
   <div id="colophon">
     <div class="credits">
-      <p>Website by <a href="https://www.alexgwebdev.com/" target="_blank" rel="noopener noreferrer">
+      <p><%= t('footer.credits')%> <a href="https://www.alexgwebdev.com/" target="_blank" rel="noopener noreferrer">
           <%= image_tag "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAtCAYAAADydghMAAAASklEQVR42u3PQQEAQAQAsBPlHiJrJZQEEtgaLOpnv0NCWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWHg1htpKiZ9RTUcAAAAASUVORK5CYII=", data: { src: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543599526/white_letters_no_back.png" }, class: "logo-dev lazy flip", alt: "Alex G - Web developer"%></a>
-        and
+        <%= t('footer.and')%>
         <a href="#" target="_blank" rel="noopener noreferrer">
           <%= image_tag "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAtCAYAAADydghMAAAASklEQVR42u3PQQEAQAQAsBPlHiJrJZQEEtgaLOpnv0NCWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWHg1htpKiZ9RTUcAAAAASUVORK5CYII=", data: { src: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1582895858/floppy_logo_white.png" },class: "logo-dev lazy flip", alt: "Florian Dublanc - Web developer"%>
         </a>
