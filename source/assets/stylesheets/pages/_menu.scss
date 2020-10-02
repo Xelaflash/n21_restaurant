@@ -222,8 +222,6 @@
 
 /* Masonry item */
 .gallery .brick {
-  // margin: 5px 2px;
-  // vertical-align:top;
   padding: 5px;
 }
 
@@ -276,21 +274,6 @@
   margin: 20px auto 50px;
 }
 
-.icon-default {
-  position: absolute;
-  left: 50%;
-  top: -59px;
-  height: 59px;
-  width: 254px;
-  transform: translateX(-50%);
-  text-align: center;
-  padding: 20px 0 0 0;
-}
-
-.icon-skeen {
-  background: url('https://res.cloudinary.com/dpra9vwkq/image/upload/v1583333772/pattern-skeen.png') no-repeat center center;
-}
-
 .events-wrapper{
   padding-top: 20px;
 }
@@ -313,57 +296,6 @@
     color: $red;
   }
 }
-
-
-// div#quad {
-//   background-color: #000;
-//   font-size: 0; width: 60%;
-//   margin: 0 auto;
-//   box-shadow: 0 0 12px rgba(0,0,0,0.8);
-//   border-radius:4px;
-// }
-// div#quad figure {
-//   margin: 0;
-//   width: 50%;
-//   height: auto;
-//   transition: all 1s;
-//   display: inline-block;
-//   position: relative;
-//   overflow: hidden;
-// }
-// div#quad figure:hover {
-//   cursor: pointer;
-//   z-index: 4;
-// }
-// div#quad figure img {
-//   width: 100%;
-//   height: auto;
-// }
-
-// div#quad figure:nth-child(1) { transform-origin: top left; }
-// div#quad figure:nth-child(2) { transform-origin: top right; }
-// div#quad figure:nth-child(3) { transform-origin: bottom left; }
-// div#quad figure:nth-child(4) { transform-origin: bottom right; }
-
-// div#quad figure figcaption {
-//   margin: 0;
-//   opacity: 0;
-//   background: rgba(0,0,0,0.3);
-//   color: #fff;
-//   padding: 5px;
-//   font-size: 0.8rem;
-//   letter-spacing: 0.05em;
-//   font-weight: lighter;
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-// 	transition: opacity 1s 0.5s;
-// }
-// .expanded {
-//   transform: scale(2);
-//   z-index: 5;
-// }
-// div#quad figure.expanded figcaption { opacity: 1; }
 
 .clients {
   padding-top: 20px;

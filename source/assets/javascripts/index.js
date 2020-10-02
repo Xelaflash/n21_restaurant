@@ -4,7 +4,7 @@ import './plugins/lightbox';
 
 // components JS files
 import './components/contact';
-import './components/events_gallery.js';
+
 import { toggleNav, toggleImg } from './components/mobile_nav';
 import { handleFirstTab } from './components/keyboard_focus';
 import { checkScroll } from './components/nav_scroll';

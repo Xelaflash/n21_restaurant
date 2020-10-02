@@ -1,18 +1,16 @@
-pic38:
+pic1:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600949952/crowd_3.jpg"
-pic31:
+pic2:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240068/crowd.jpg"
-pic32:
+pic3:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Food_details.jpg"
-pic33:
+pic4:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600779599/plate_events.jpg"
-pic7:
+pic5:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600175534/glasses.jpg"
-pic40:
+pic6:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1601377550/crowd4.jpg"
-pic41:
+pic7:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1601377551/Presentation.jpg"
-pic42:
+pic8:
   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1601377551/crowd_event.jpg"
-# pic14:
-#   url: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1597240067/Dessert_Cheese_Event.jpg"
