@@ -3,18 +3,19 @@
   right: 0;
   left: 0;
   z-index: 50;
-  top: 0;
+  top: -80px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 1px 15px 0 rgba(255, 255, 255, 0.6);
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.5s linear, opacity 0.5s linear;
+  transition: all 0.3s ease-in-out;
 }
 
 #navbar.scrolled {
   visibility: visible;
   opacity: 1;
+  transform: translate(0,80px);
 }
 
 .nav-wrapper {

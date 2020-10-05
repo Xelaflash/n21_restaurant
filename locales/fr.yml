@@ -4,7 +4,7 @@ fr:
     about-link: "rien"
     food-link: "bouffe"
     contact-link: "contacter"
-    order-link: commander"
+    order-link: "commander"
     resa-link: "reserver"
   footer:
     follow: "suivez nous"
