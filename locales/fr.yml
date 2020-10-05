@@ -1,4 +1,6 @@
 fr:
+  language_name: "français"
+  flag: "fr"
   # shared
   nav:
     about-link: "rien"

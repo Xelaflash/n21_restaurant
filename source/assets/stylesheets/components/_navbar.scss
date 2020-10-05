@@ -32,11 +32,7 @@
 .pre-nav-links {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  list-style: none;
   font-size: 15px;
-  margin: 0;
-  padding: 0;
 
   li {
     padding: 0 25px;
@@ -149,7 +145,7 @@
 
 .nav-icon {
   color: $white;
-  font-size: 28px;
+  font-size: 26px;
   margin: 0 10px;
   padding-bottom: 0;
 }
@@ -158,6 +154,10 @@
   color: $cream;
   transition: 0.3s ease;
 }
+
+
+
+
 
 
 // start sidenav

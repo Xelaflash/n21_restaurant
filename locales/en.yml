@@ -1,5 +1,7 @@
 en:
   # shared
+  language_name: "english"
+  flag: "UK"
   nav:
     about-link: "About us"
     food-link: "Food"
