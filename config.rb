@@ -12,7 +12,6 @@ end
 
 activate :i18n
 
-
 activate :external_pipeline,
   name: :webpack,
   command: build? ? 'yarn run build' : 'yarn run start',

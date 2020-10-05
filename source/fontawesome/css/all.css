@@ -53,6 +53,16 @@
   content: "\f06a";
 }
 
+.fa-envelope:before {
+  content: "\f0e0"; }
+
+.fa-phone:before {
+    content: "\f095"; }
+
+.fa-clock:before {
+  content: "\f017"; }
+
+
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
