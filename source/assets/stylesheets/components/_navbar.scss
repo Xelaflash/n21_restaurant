@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: flex-end;
   list-style: none;
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
   padding: 0;
 
@@ -43,15 +43,11 @@
   }
 
   .fa-phone,
-  .fa-mobile,
+  .fa-clock,
   .fa-envelope {
     padding-right: 5px;
-    font-size: 18px;
+    font-size: 16px;
   }
-}
-
-.fa-linkedin {
-  font-size: 28px;
 }
 
 .pre-nav-link {
@@ -59,18 +55,9 @@
   text-decoration: none;
 }
 
-.pre-nav-link:hover,
-.fa-linkedin:hover {
-  opacity: 0.75;
+.pre-nav-link:hover{
+  color: $cream;
   cursor: pointer;
-}
-
-
-@media screen and (max-width: 1000px) {
-  .pre-navbar {
-    padding: 0px 0px;
-    justify-content: space-around;
-  }
 }
 // END PRENAV
 
