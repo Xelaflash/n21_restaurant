@@ -308,8 +308,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: auto;
-  white-space: nowrap;
   transition: all 0.3s ease-out;
 
 
@@ -328,6 +326,7 @@
 .show-sidenav {
   width: 100%;
   opacity: 1;
+  overflow: auto;
 }
 
 .sidenav a {
@@ -379,7 +378,7 @@
 
 .langue-picker-sidenav-wrapper {
   text-align: center;
-  margin: 50px auto;
+  margin: 40px auto;
   i {
     font-size: 25px;
     padding-right:5px
@@ -395,10 +394,9 @@
   }
 }
 
-
 .social-wrapper-sidenav {
   text-align: center;
-  // margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 .social-links-sidenav {
@@ -505,14 +503,7 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .sidenav ul {
-    margin: 50px auto 0 auto;
-  }
-
-  .social-wrapper-sidenav {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: 100px 0 0;
   }
 }
 
@@ -522,7 +513,7 @@
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
   .sidenav-content {
-    margin-top: 180px;
+    margin-top: 150px;
   }
 }
 
