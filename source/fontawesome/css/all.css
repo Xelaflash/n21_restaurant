@@ -17,6 +17,9 @@
   line-height: 1;
 }
 
+.fa-angle-down:before {
+  content: "\f107"; }
+
 .fa-facebook:before {
   content: "\f09a";
 }
@@ -40,6 +43,9 @@
 .fa-arrow-up:before {
   content: "\f062";
 }
+
+.fa-globe:before {
+  content: "\f0ac"; }
 
 .fa-times:before {
   content: "\f00d";

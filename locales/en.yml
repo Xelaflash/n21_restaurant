@@ -1,6 +1,6 @@
 en:
   # shared
-  language_name: "english"
+  language_name: "English"
   flag: "UK"
   nav:
     about-link: "About us"
@@ -17,9 +17,9 @@ en:
   # section about
   about-section:
     title: "About us"
-    desc1_html: "N°21 Restaurant is set in a chic & Retro interior, with natural light in abundance, it has an almost 1960s Los Angeles feeling to its atmosphere. <br>
+    desc1_html: "N°21 Restaurant is set in a Chic & Retro interior, with natural light in abundance, it has an almost 1960s Los Angeles feeling to its atmosphere. <br>
       <strong>Dining with us is an Experience like no other</strong>."
-    desc2: "Serving Modern European food, with a certain local influence, our cuisine is unique while allowing the quality of the produce to shine through. We use only the finest imported and local ingredients here at N°21."
+    desc2: "Serving Modern European food, with a certain local influence, our cuisine is unique while allowing the quality of the product to shine through. We use only the finest imported and local ingredients here at N°21."
     desc3_html: "We are nested in the middle of Ho Chi Min City District 3, less than 5 min away from the heart of booming Saigon (D1).<br>
     N°21 possess 2 terraces, a swimming pool and a mezzanine which can be privatized for any kind of event."
     desc4_html: "We serve all day long, from <strong>7 AM to 9:45 PM</strong> last order. <br>
@@ -31,7 +31,7 @@ en:
     text_html: "As all begins with ingredients, we focus on quality ones, responsible sourcing and sustainability at every chance we get. <br>
       We serve modern <strong>European Food with Asian influences</strong>, simple cuisine but elegant giving license to the product to do the talking. <br>
       Our Executive chef <strong>Max Wiersma</strong> is a well-travelled creative chef from UK with more than 18 years of experience. <br>
-      <strong>Breakfast, Set Lunch, Sunday Roast, dinner or small dishes</strong> to share with friends alongside the pool paired with some delicious wine from our varied list… <br>
+      <strong>Breakfast, Set Lunch, Sunday Roast, dinner or small dishes</strong> to share with friends alongside the pool paired with some delicious wines from our varied list… <br>
       We got you covered at N°21."
     menu-link: "View the full menu"
 
@@ -76,5 +76,5 @@ en:
     address_html: "21 Ngô Thời Nhiệm, Phường 6, Quận 3 <br />
       Ho Chi Minh City, Vietnam"
     contact-title: "Contact details"
-    hours-title: "Hours"
+    hours-title: " Opening hours"
     hours_html: "Every day <strong>7:00 AM - 09:45 PM</strong>"

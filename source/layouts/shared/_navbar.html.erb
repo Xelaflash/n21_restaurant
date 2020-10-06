@@ -34,9 +34,22 @@
 
 
 
-              <%= link_to "English", "/" , locale: :en, class: "dropdown-item active" %>
-              <%= link_to "Français", "/fr/" , locale: :fr, class: "dropdown-item"%>
+              <%#= link_to "English", "/" , locale: :en, class: "dropdown-item active" %>
+              <%#= link_to "Français", "/fr/" , locale: :fr, class: "dropdown-item"%>
 
+<div class="languePicker-wrapper">
+  <div class="sl-nav">
+    <ul>
+      <li><i class="fas fa-globe"></i><b id="current_langue"><%= I18n.t('language_name') %></b><i class="fa fa-angle-down" aria-hidden="true"></i>
+        <div class="triangle"></div>
+        <ul>
+          <li><i class="sl-flag flag-uk"></i> <%= link_to "English", "/" , locale: :en, class: "active" %></li>
+          <li><i class="sl-flag flag-vn"></i> <%= link_to "Tiếng Việt", "/fr/" , locale: :fr, class: ""%></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
 
 
     </div>
