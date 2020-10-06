@@ -17,6 +17,9 @@
   line-height: 1;
 }
 
+.fa-angle-down:before {
+  content: "\f107"; }
+
 .fa-facebook:before {
   content: "\f09a";
 }
@@ -41,6 +44,9 @@
   content: "\f062";
 }
 
+.fa-globe:before {
+  content: "\f0ac"; }
+
 .fa-times:before {
   content: "\f00d";
 }
@@ -52,6 +58,16 @@
 .fa-exclamation-circle:before {
   content: "\f06a";
 }
+
+.fa-envelope:before {
+  content: "\f0e0"; }
+
+.fa-phone:before {
+    content: "\f095"; }
+
+.fa-clock:before {
+  content: "\f017"; }
+
 
 @font-face {
   font-family: 'Font Awesome 5 Brands';

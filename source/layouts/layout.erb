@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= I18n.locale %>">
 
 <head>
   <meta charset="utf-8">
@@ -20,6 +20,10 @@
   <meta name="twitter:title" content="<%= data.meta.meta_title %>">
   <meta name="twitter:description" content="<%= data.meta.meta_description %>">
   <meta name="twitter:image:src" content="<%= data.meta.meta_image %>">
+
+  <link rel="alternate" hreflang="en" href="/" />
+  <link rel="alternate" hreflang="vn" href="https://www.n21saigon.com/vn" />
+
   <%= partial "layouts/shared/favicon" %>
   <%= stylesheet_link_tag "application" %>
   <%= stylesheet_link_tag "fontawesome/css/all" %>

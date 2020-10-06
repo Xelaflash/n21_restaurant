@@ -18,8 +18,13 @@ const phoneNumber = intlTelInput(input, {
   preferredCountries: ['vn'],
 });
 
+const lang = document.location.href.split('/')[3];
 const telDiv = document.querySelector('.iti');
-telDiv.setAttribute('data-validate', 'Phone is required');
+if (lang === 'vn') {
+  telDiv.setAttribute('data-validate', 'số điện thoại bắt buộc nhập');
+} else {
+  telDiv.setAttribute('data-validate', 'Phone is required');
+}
 
 function reset() {
   input.classList.remove('error');

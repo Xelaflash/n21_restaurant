@@ -1,40 +1,40 @@
-<section id="contact-section" class="page">
+<section id="contact_us" class="page">
   <div class="container">
-    <h2 class="page-title">Contact Us</h2>
+    <h2 class="page-title"><%= t('contact-section.title') %></h2>
     <hr class="title-sep">
     <div class="contact1">
       <div class="container-contact1">
         <form class="contact1-form validate-form" action="https://formspree.io/xpzdaavg" method="POST">
           <div class="row">
-            <div class="wrap-input1 validate-input" data-validate="Name is required">
-              <label for="form-name" class="sr-only">Name</label>
-              <input class="input1" id="form-name" type="text" name="name" placeholder="Name">
+            <div class="wrap-input1 validate-input" data-validate="<%= t('contact-section.validation-name') %>">
+              <label for="form-name" class="sr-only"><%= t('contact-section.name') %></label>
+              <input class="input1" id="form-name" type="text" name="name" placeholder="<%= t('contact-section.name') %>">
             </div>
-            <div class="wrap-input1 validate-input" data-validate="Phone number is required">
-              <label for="form-phone" class="sr-only">Phone</label>
-              <input class="input1" id="form-phone" type="tel" placeholder="Phone Number">
-              <span id="valid-msg" class="hide"><i class="fas fa-check"></i> Valid</span>
+            <div class="wrap-input1 validate-input" data-validate="<%= t('contact-section.validation-phone') %>">
+              <label for="form-phone" class="sr-only"><%= t('contact-section.phone') %></label>
+              <input class="input1" id="form-phone" type="tel" placeholder="<%= t('contact-section.phone') %>">
+              <span id="valid-msg" class="hide"><i class="fas fa-check"></i> <%= t('form-validation.valid') %></span>
               <span id="error-msg" class="hide"></span>
             </div>
           </div>
           <div class="row">
-            <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-              <label for="form-email" class="sr-only">Email</label>
-              <input class="input1" id="form-email" type="email" name="email" placeholder="Email">
+            <div class="wrap-input1 validate-input" data-validate="<%= t('contact-section.validation-email') %>">
+              <label for="form-email" class="sr-only"><%= t('contact-section.email') %></label>
+              <input class="input1" id="form-email" type="email" name="email" placeholder="<%= t('contact-section.email') %>">
             </div>
-            <div class="wrap-input1 validate-input" data-validate="Subject is required">
-              <label for="form-subject" class="sr-only">Subject</label>
-              <input class="input1" id="form-subject" type="text" name="subject" placeholder="Subject">
+            <div class="wrap-input1 validate-input" data-validate="<%= t('contact-section.validation-email') %>">
+              <label for="form-subject" class="sr-only"><%= t('contact-section.subject') %></label>
+              <input class="input1" id="form-subject" type="text" name="subject" placeholder="<%= t('contact-section.subject') %>">
             </div>
           </div>
-          <div class="validate-input" data-validate="Message is required" id="message-area">
-            <label for="form-message" class="sr-only">Message</label>
-            <textarea class="input1" id="form-message" name="message" placeholder="Message"></textarea>
+          <div class="validate-input" data-validate="<%= t('contact-section.validation-message') %>" id="message-area">
+            <label for="form-message" class="sr-only"><%= t('contact-section.message') %></label>
+            <textarea class="input1" id="form-message" name="message" placeholder="<%= t('contact-section.message') %>"></textarea>
           </div>
           <div class="container-contact1-form-btn">
             <button class="contact1-form-btn">
               <span>
-                Send Email
+                <%= t('contact-section.send-email') %>
                 <i class="fas fa-arrow-right"></i>
               </span>
             </button>
