@@ -5,7 +5,7 @@
   z-index: 50;
   top: -80px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
   box-shadow: 0 1px 15px 0 rgba(255, 255, 255, 0.6);
   visibility: hidden;
   opacity: 0;
@@ -308,7 +308,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
+  overflow: auto;
+  white-space: nowrap;
   transition: all 0.3s ease-out;
 
 
