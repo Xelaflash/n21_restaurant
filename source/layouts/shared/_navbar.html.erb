@@ -13,16 +13,16 @@
   </section>
   <div class="nav-wrapper">
     <div class="navbar-logo-container">
-      <% link_to "#home-section", 'aria-label': "Back to Home" do %>
+      <% link_to "#home", 'aria-label': "Back to Home" do %>
         <%= image_tag "https://res.cloudinary.com/dpra9vwkq/image/upload/v1583154420/Logo_white_noBg.png", alt: "N21 Restaurant - Logo", id:"nav-logo-left" %>
       <% end %>
     </div>
     <!-- Navigation -->
     <div class="navbar-middle hidden-sm-down">
       <ul class="nav-list">
-        <li class="navbar-item"><%= link_to t('nav.about-link'), "#about-section", class:"navbar-link" %></li>
-        <li class="navbar-item"><%= link_to t('nav.food-link'), "#menu-section", class:"navbar-link" %></li>
-        <li class="navbar-item"><%= link_to t('nav.contact-link'), "#contact-section", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to t('nav.about-link'), "#about_us", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to t('nav.food-link'), "#our_cuisine", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to t('nav.contact-link'), "#contact_us", class:"navbar-link" %></li>
       </ul>
     </div>
     <div class="navbar-right hidden-sm-down">
@@ -51,9 +51,9 @@
       <div class="sidenav">
         <div class="sidenav-content">
           <ul>
-            <li class="navbar-item"><%= link_to t('nav.about-link'), "#about-section", class:"navbar-link sidenav-link" %></li>
+            <li class="navbar-item"><%= link_to t('nav.about-link'), "#about_us", class:"navbar-link sidenav-link" %></li>
             <li class="navbar-item"><%= link_to t('nav.food-link'), "#menu-section", class:"navbar-link sidenav-link" %></li>
-            <li class="navbar-item"><%= link_to t('nav.contact-link'), "#contact-section", class:"navbar-link sidenav-link" %></li>
+            <li class="navbar-item"><%= link_to t('nav.contact-link'), "#contact_us", class:"navbar-link sidenav-link" %></li>
           </ul>
           <div class="cta-wrapper-sidenav">
             <button type="button" class="btn-ghost-sidenav" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" ><%= t('nav.order-link') %></button>
