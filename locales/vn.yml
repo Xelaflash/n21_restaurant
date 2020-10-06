@@ -1,0 +1,76 @@
+vn:
+  # shared
+  language_name: "Tiếng Việt"
+  nav:
+    about-link: "VỀ CHÚNG TÔI"
+    food-link: "Phong cách ẩm thực"
+    contact-link: "Liên hệ"
+    order-link: "Đặt món"
+    resa-link: "Đặt bàn"
+  footer:
+    follow: "Follow us on"
+    copyright: "© 2020 N21 Restaurant. All rights reserved"
+    credits: "Website by"
+    and: "and"
+
+  # section about
+  about-section:
+    title: "VỀ CHÚNG TÔI"
+    desc1_html: "Nhà hàng N°21 tọa lạc trong không gian nội thất sang trọng & Cổ điển với ánh sáng tự nhiên. Bầu không khí ở đây mang đến một cảm giác giống như Los Angeles trong những năm 1960.<br>
+      <strong>Chúng tôi sẽ mang đến cho các bạn một trải nghiệm đáng nhớ!</strong>."
+    desc2: "Với sự kết hợp giữa ẩm thực Châu Âu và nguyên liệu truyền thống Châu Á cho ra đời món ăn có hương vị đột phá kết hợp cùng rượu vang hảo hạn và dịch vụ thân thiện."
+    desc3_html: "Tọa lạc giữa Quận 3, Thành phố Hồ Chí Minh, cách trung tâm Sài Gòn chưa đầy 5 phút. N°21 với khuôn viên sân vườn,hồ bơi và tầng lửng riêng biệt thích hợp cho việc tổ chức sự kiện, hội họp quan trọng.<br>"
+    desc4_html: "Nhà hàng mở cửa từ <strong>7 AM đến 9:45 PM</strong> Menu có nhiều sự lựa chọn phù hợp với từng khung giờ.<br>
+      <strong>Combo ăn sáng, Set ăn trưa và đặc biệt nhất là Bữa trưa theo phong cách Anh Quốc cổ điển vào mỗi chủ nhật. Ngoài ra còn có thực đơn gọi món phong phú áp dụng cả ngày</strong>."
+
+# section menu
+  menu-section:
+    title: "Phong cách ẩm thực"
+    text_html: "Đội ngũ chúng tôi tập trung vào chất lượng, <strong>ưu tiên tìm những nguồn cung ứng thực phẩm sạch có nguồn gốc uy tín.</strong><br>
+      Các món ăn đều được chế biến theo phong cách  Châu Âu hiện đại kết hợp nguyên liệu Châu Á dưới sự sáng tạo của <strong>Max Wiersma</strong>,1 bếp trưởng người Anh đã dành 18 năm kinh nghiệm cùng nhiều chuyến đi khám phá thế giới, tìm tòi và nghiên cứu ẩm thực là những điều mà anh dành trọn cả đời để hoàn thiện cho những món ăn của mình.<br>
+      Một bữa ăn hoàn hảo đều cần có sự kết hợp giữa hương vị và không gian,sự trình bày đẹp mắt của Anh luôn mang lại điểm nhấn cho thành phẩm.
+Bữa sáng, set ăn trưa, Bữa trưa phong cách Anh quốc cổ điển vào mỗi chủ nhật, bữa tối lãng mạn hoặc các món ăn chơi cùng với danh sách các loại rượu ngon chọn lọc để chia sẻ với bạn bè bên cạnh hồ bơi thì còn gì bằng!!"
+    menu-link: "View the full menu"
+
+#section Gallery
+  gallery-section:
+    title: "Gallery"
+
+#section Events
+  events-section:
+    title: "Tổ chức sự kiện"
+    text1_html: "Nếu bạn đang cần tìm địa điểm tổ chức sự kiện thì chúng tôi sẽ luôn sẵn sàng cho sự kiện của bạn cùng nhiều phong cách đa dạng: hội thảo, training, workshop, talk show, gặp mặt…<br>
+    Không gian riêng tư tuyệt đối có sức chứa hơn <strong>50</strong> ghế ngồi cho các bữa tiệc thân mật hoặc <strong>100</strong> chỗ đứng các cuộc hội họp."
+    text2_html: "<strong>Chúng tôi phục vụ nhiều gói dịch vụ phong phú từ buffet, finger food, set menu và tea break phù hợp với yêu cầu của khách hàng.</strong><br>"
+    text3_html: "Chúng tôi tự tin có thể tổ chức thành công những buổi hội nghị-hội thảo quan trọng của bạn. Liên hệ với chúng tôi để được nhân viên tư vấn nhiệt tình nhé."
+    link-start: "NO LINK START"
+    link-text: "Liên hệ với chúng tôi"
+    link-end: "để được nhân viên tư vấn nhiệt tình nhé."
+    clients: "Các hội nghị chúng tôi từng tổ chức"
+
+#section contact
+  contact-section:
+    title: "Liên hệ với chúng tôi"
+    name: "họ và tên"
+    validation-name: "tên bắt buộc nhập"
+    phone: "số điện thoại"
+    validation-phone: "số điện thoại bắt buộc nhập"
+    email: "email"
+    validation-email: "e-mail hợp lệ :ex@abc.xyz"
+    subject: "nội dung"
+    validation-subject: "Subject is required"
+    message: "tin nhắn"
+    validation-message: "nội dung tin nhắn bắt buộc nhập"
+    send-email: "Send email"
+
+  form-validation:
+    valid: "Valid"
+
+#section location& hours
+  location_hours:
+    address-title: "Địa chỉ"
+    address_html: "21 Ngô Thời Nhiệm, Phường 6, Quận 3 <br />
+      Ho Chi Minh City, Vietnam"
+    contact-title: "Contact details"
+    hours-title: "Opening hours"
+    hours_html: "Every day <strong>7:00 AM - 09:45 PM</strong>"

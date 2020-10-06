@@ -31,27 +31,19 @@
         <button  type="button" class="btn-flat reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true"><%= t('nav.resa-link') %></button>
         <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
       </div>
-
-
-
-              <%#= link_to "English", "/" , locale: :en, class: "dropdown-item active" %>
-              <%#= link_to "Français", "/fr/" , locale: :fr, class: "dropdown-item"%>
-
-<div class="languePicker-wrapper">
-  <div class="sl-nav">
-    <ul>
-      <li><i class="fas fa-globe"></i><b id="current_langue"><%= I18n.t('language_name') %></b><i class="fa fa-angle-down" aria-hidden="true"></i>
-        <div class="triangle"></div>
-        <ul>
-          <li><i class="sl-flag flag-uk"></i> <%= link_to "English", "/" , locale: :en, class: "active" %></li>
-          <li><i class="sl-flag flag-vn"></i> <%= link_to "Tiếng Việt", "/fr/" , locale: :fr, class: ""%></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
+      <div class="languePicker-wrapper">
+        <div class="sl-nav">
+          <ul>
+            <li><i class="fas fa-globe"></i><b id="current_langue"><%= I18n.t('language_name') %></b><i class="fa fa-angle-down" aria-hidden="true"></i>
+              <div class="triangle"></div>
+              <ul>
+                <li class="langue-links"><i class="sl-flag flag-uk"></i> <%= link_to "English", "/" , locale: :en %></li>
+                <li class="langue-links"><i class="sl-flag flag-vn"></i> <%= link_to "Tiếng Việt", "/vn/" , locale: :vn %></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- Burger menu for small screens -->
     <div class="mobile_nav hidden-md-up">
@@ -72,6 +64,11 @@
             <button type="button" class="btn-ghost-sidenav" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" ><%= t('nav.order-link') %></button>
             <button  type="button" class="btn-ghost-sidenav reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true" ><%= t('nav.resa-link') %></button>
             <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
+          </div>
+          <div class="langue-picker-sidenav-wrapper">
+            <i class="fas fa-globe"></i>
+            <%= link_to "English", "/", locale: :en %>
+            <%= link_to "Tiếng Việt", "/vn/", locale: :vn %>
           </div>
           <div class="social-wrapper-sidenav">
             <div class="social-links-sidenav">
