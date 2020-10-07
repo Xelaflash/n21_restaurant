@@ -84,14 +84,14 @@
 /* Navbar link */
 .navbar-item {
   padding: 0 25px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .navbar-link {
   color: $white;
   font-size: 1.2rem;
   font-family: $headers-font;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   cursor: pointer;
   text-decoration: none;
   padding-bottom: 10px;
@@ -133,7 +133,7 @@
 .btn-flat {
   margin:0 10px;
   color: white;
-  padding: 10px 25px 6px;
+  padding: 10px 25px;
   border-radius: 5px;
   background: $red;
   transition: background 0.3s ease;
@@ -341,12 +341,12 @@
 }
 
 .sidenav-content {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .cta-wrapper-sidenav {
   text-align: center;
-  margin: 0px auto 20px auto;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -355,14 +355,14 @@
 .btn-ghost-sidenav {
   color: $black;
   border: 2px solid $black;
-  padding: 15px 25px 10px;
+  padding: 15px 20px;
   border-radius: 50px;
   font-weight: lighter;
   opacity: 0.8;
   transition: all 0.3s;
   cursor: pointer;
   font-family: $headers-font;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 1.2rem;
   background: transparent;
   margin: 10px auto;
@@ -396,7 +396,7 @@
 
 .social-wrapper-sidenav {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .social-links-sidenav {
@@ -496,14 +496,22 @@
   .sidenav li {
     padding: 25px 0;
   }
-  .sidenav-content {
-    margin-top: 60px;
-  }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .sidenav ul {
-    margin: 100px 0 0;
+    margin: 80px 0 0;
+  }
+  .social-wrapper-sidenav {
+    margin-bottom: 40px;
+  }
+  .cta-wrapper-sidenav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .btn-ghost-sidenav {
+    width: 180px;
+    font-size:1.1rem;
   }
 }
 
@@ -514,6 +522,22 @@
   and (orientation: portrait) {
   .sidenav-content {
     margin-top: 150px;
+  }
+}
+
+// iphone x & 11
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 896px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .sidenav-content {
+    margin-top: 120px;
+  }
+  .cta-wrapper-sidenav {
+    margin: 50px auto;
+  }
+  .social-wrapper-sidenav {
+    margin: 40px;
   }
 }
 
