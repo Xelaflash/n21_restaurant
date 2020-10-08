@@ -20,16 +20,20 @@
       <div class="menu-text-container">
         <p><%= t('menu-section.text_html') %></p>
         <div class="menu-link-wrapper">
-          <a id="menu-link" href="https://res.cloudinary.com/dpra9vwkq/image/upload/v1597238981/N21_restaurant_menu.pdf" target="_blank" rel="noopener noreferrer"><%= t('menu-section.menu-link') %></a>
+          <a id="menu-link" href="https://res.cloudinary.com/dpra9vwkq/image/upload/v1602163483/N21_restaurant_menu.pdf"
+            target="_blank" rel="noopener noreferrer"><%= t('menu-section.menu-link') %></a>
         </div>
       </div>
     </div>
   </div>
   <div class="order_booking container">
     <div class="cta-buttons">
-      <button type="button" class="order-btn" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" ><%= t('nav.order-link')%></button>
-      <button  type="button" class="order-btn reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d" data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b" data-glf-reservation="true"><%= t('nav.resa-link') %></button>
-      <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
+      <button type="button" class="order-btn" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d"
+        data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b"><%= t('nav.order-link')%></button>
+      <button type="button" class="order-btn reservation" data-glf-cuid="dd89f236-fb7a-448c-a3a9-77820e9d8f7d"
+        data-glf-ruid="978c69b9-8004-465e-968d-c01b6e884c1b"
+        data-glf-reservation="true"><%= t('nav.resa-link') %></button>
+      <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
     </div>
   </div>
   <section id="gallery-section">
@@ -55,7 +59,9 @@
         <p><%= t('events-section.text1_html') %></p>
         <p><%= t('events-section.text2_html') %></p>
         <p><%= t('events-section.text3_html') %></p>
-        <p><%= t('events-section.link-start') %> <%= link_to t('events-section.link-text'), "#contact_us", id: "events-link"%> <%= t('events-section.link-end') %></p>
+        <p><%= t('events-section.link-start') %>
+          <%= link_to t('events-section.link-text'), "#contact_us", id: "events-link"%>
+          <%= t('events-section.link-end') %></p>
       </div>
       <div class="gallery container">
         <% data.event.each do |owner, pic| %>
@@ -71,9 +77,9 @@
         <hr class="title-sep" />
         <ul class="brands">
           <% data.clients.each do |owner, client| %>
-            <li class="brands__item">
-              <%= image_tag client.url, alt: "N21 Restaurant - Events clients", class: "clients-logo lazy", loading: "lazy" %>
-            </li>
+          <li class="brands__item">
+            <%= image_tag client.url, alt: "N21 Restaurant - Events clients", class: "clients-logo lazy", loading: "lazy" %>
+          </li>
           <% end %>
         </ul>
       </div>
