@@ -296,8 +296,9 @@
 }
 
 .sidenav {
-  height: calc(100vh + 80px);
-  overflow: auto;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 0;
   position: fixed;
   opacity: 0;
@@ -312,6 +313,7 @@
   transition: all 0.3s ease-out;
   display: flex;
   justify-content: center;
+  border:1px solid red;
 
 
   ul {
@@ -344,7 +346,10 @@
 
 .sidenav-content {
   padding-top: 40px;
-  height:100%;
+  height:100vh;
+  width: 100%;
+  padding-bottom: 20px;
+  border:1px solid green;
 }
 
 .cta-wrapper-sidenav {
