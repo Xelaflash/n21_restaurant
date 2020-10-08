@@ -1,4 +1,6 @@
 const backToTopBtn = document.querySelector('.back_to_top');
+const anchor = document.querySelector('#about_us').offsetTop;
+console.log(anchor);
 
 function checkScrollToTop() {
   const scrollPosition = window.scrollY;
@@ -10,7 +12,7 @@ function checkScrollToTop() {
 }
 
 function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: anchor, left: 0, behavior: 'smooth' });
 }
 
 backToTopBtn.addEventListener('click', scrollToTop);

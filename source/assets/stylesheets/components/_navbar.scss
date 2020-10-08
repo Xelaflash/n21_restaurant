@@ -296,7 +296,8 @@
 }
 
 .sidenav {
-  height:100vh;
+  height: calc(100vh + 80px);
+  overflow: auto;
   width: 0;
   position: fixed;
   opacity: 0;
@@ -309,10 +310,12 @@
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
 
 
   ul {
-    margin: 60px auto 0 auto;
+    margin:0;
     text-align: center;
   }
 
@@ -326,12 +329,11 @@
 .show-sidenav {
   width: 100%;
   opacity: 1;
-  overflow: auto;
 }
 
 .sidenav a {
   text-decoration: none;
-  font-size: 26px;
+  font-size: 24px;
   font-family: $headers-font;
   color: $black;
 }
@@ -341,7 +343,8 @@
 }
 
 .sidenav-content {
-  margin-top: 80px;
+  padding-top: 40px;
+  height:100%;
 }
 
 .cta-wrapper-sidenav {
@@ -500,7 +503,7 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .sidenav ul {
-    margin: 80px 0 0;
+    padding: 40px 0 0;
   }
   .social-wrapper-sidenav {
     margin-bottom: 40px;
@@ -510,18 +513,8 @@
     justify-content: space-evenly;
   }
   .btn-ghost-sidenav {
-    width: 180px;
-    font-size:1.1rem;
-  }
-}
-
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-  .sidenav-content {
-    margin-top: 150px;
+    width: 160px;
+    font-size:15px;
   }
 }
 
@@ -530,14 +523,15 @@
   and (min-device-width: 375px)
   and (max-device-width: 896px)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .sidenav-content {
-    margin-top: 120px;
-  }
+
   .cta-wrapper-sidenav {
-    margin: 50px auto;
+    margin: 20px auto;
+  }
+  .langue-picker-sidenav-wrapper {
+    margin: 30px auto;
   }
   .social-wrapper-sidenav {
-    margin: 40px;
+    margin: 40px auto;
   }
 }
 
@@ -547,7 +541,7 @@
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
   .sidenav-content {
-    margin-top: 200px;
+    padding-top: 200px;
   }
   .cta-wrapper-sidenav {
     margin: 50px auto;
