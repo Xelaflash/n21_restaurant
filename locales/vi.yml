@@ -1,6 +1,15 @@
 vi:
   # shared
   language_name: "Tiếng Việt"
+  meta:
+    host: https://www.n21saigon.com
+    meta_product_name: "N21 Restaurant - High Standard Bistronomie"
+    meta_title: "N21 Restaurant - High Standard Bistronomie"
+    meta_description: "Nhà hàng N°21 phục vụ các món ăn phong cách Châu Âu hiện đại kết hợp nguyên liệu châu á, cách trình bày đẹp mắt và tao nhã đã làm nên điểm nhấn cho thành phẩm.
+    Với cách thiết kế độc đáo về nội thất, N°21 có 2 sân vườn, gác lửng riêng và hồ bơi, chúng tôi có thể tổ chức bất cứ sự kiện nào.
+    Việc ăn trưa cùng đối tác, thưởng thức vài ly rượu bên cạnh hồ bơi hay là bữa trưa gia đình theo phong cách Anh Quốc vào chủ nhật sẽ trở nên tuyệt vời hơn tại nhà hàng N°21.
+    Đừng chờ đợi và hãy đến trải nghiệm cùng chúng tôi nào!!"
+    meta_image: "https://res.cloudinary.com/dpra9vwkq/image/upload/v1600090236/meta-img.jpg"
   nav:
     about-link: "Về chúng tôi"
     food-link: "Phong cách ẩm thực"
