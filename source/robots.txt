@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /images/*
+Sitemap: https://www.classeconseil.fr/sitemap.xml
